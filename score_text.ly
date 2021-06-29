@@ -178,7 +178,7 @@ textOriginForm =
 		\column 
 		{
 			\line \italic { continue to intersperse multiphonic and glissandi/microtones into longer phrases }
-			\line \italic { elecs tracks speed/levels of activity/attack points/space and follow changes of secion/idea }
+			\line \italic { elecs tracks speed/levels of activity/attack points/space and follow changes of section/idea }
 			\line { \null }
 			\line \italic { allow moments of focus, as before, but also explore other materials in \reference-part "Part I" as indicated }
 			\line \bold { each time through try to make something new }
@@ -203,7 +203,7 @@ textDisplaceB =
 { 
 \override \textBSize \column 
 	{
-		\line \italic { play using the ideas from \idea Origin (+ fl. ad lib.)  }
+		\line \italic { play using the ideas from \idea Origin (+ flz. ad lib.)  }
 		\line \italic { add gestural ideas below using \bold { lip and key glisses / pitch focus / dynamic inflections } }
 		\line \italic { elecs introduce similar multiphonics and gestures }
 		\line \bold { each time through increase intensity along with options and instability }
@@ -377,7 +377,7 @@ textArrivalDisplaceB =
 		\line \italic { play as \idea Displace but build messiness sensitively over time }
 		\line \italic { embrace tuning clashes, but also subtle dynamics }
 		\line \italic { continue to insperse with noise clouds }
-		\line \italic { elecs adds further displacments to the core \idea Arrival harmony }
+		\line \italic { elecs adds further displacements to the core \idea Arrival harmony }
 		\line \bold { use to add complexity or to dissolve/end this section }
 
 	}
@@ -671,7 +671,7 @@ textCentreForm =
 		\column 
 		{
 			\line \italic { intersperse multiphonic and glissandi/microtones into varied phrases }
-			\line \italic { elecs tracks speed/levels of activity/attack points/space and follow changes of secion/idea }
+			\line \italic { elecs tracks speed/levels of activity/attack points/space and follow changes of section/idea }
 			\line { \null }
 			\line \italic { increasing blur the distinction between glissandi/microtones and multiphonics }
 
@@ -791,7 +791,7 @@ textTransitionC =
 { 
 	\override \textBSize \column 
 	{
-		\line \italic { play as \bold sustains (+ fl. ad lib.)  or \variant A and \variant B as relevant to the block }
+		\line \italic { play as \bold sustains (+ flz. ad lib.)  or \variant A and \variant B as relevant to the block }
 		\line \italic { elecs fill in harmony }
 		\blankline
 		\line { \variant-explain A \bold { first block } - sustains, each one with a crescendo, varying speed of beating ad lib. }
@@ -821,7 +821,7 @@ textBlockOneB =
 { 
 	\override \textBSize \column 
 	{
-		\line \italic { play with either \variant A or \variant B or move between them (both + fl. ad lib.) — \bold { move slowly between groups, focussing on just a few fingerings at a time }  }
+		\line \italic { play with either \variant A or \variant B or move between them (both + flz. ad lib.) — \bold { move slowly between groups, focussing on just a few fingerings at a time }  }
 		\line \italic { elecs track activity and fill in the missing harmony }
 		\blankline
 		\line { \variant-explain A long sustains }
@@ -862,7 +862,7 @@ textBlockTwoC =
 		\line \italic { play using any combination of \concat { \variant A \hspace #0.3 , }  \variant B and \variant C to create a dense texture }
 		\line \italic { elecs fill out texture (filtering materials from the second block) }
 		\blankline
-		\line { \variant-explain A \bold { first block } - long sustains + flickering trill / fl. ad lib. }
+		\line { \variant-explain A \bold { first block } - long sustains + flickering trill / flz. ad lib. }
 		\blankline
 		\score { \exampleBlockTwoSustains }
 		\blankline

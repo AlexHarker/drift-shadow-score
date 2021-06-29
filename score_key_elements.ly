@@ -94,7 +94,7 @@ explain-techniques-a = \markup \justify { The piece is based primarily on multip
 
 explain-techniques-b = \markup \justify { Dynamics are often given as a range which can be explored freely. Not all fingerings in a given block may be equally flexible in terms of dynamic, and at times the dynamics marked will imply underblowing, creating an unstable result. The written directions should be used alongside experimentation to interpret the written dynamics. }
 
-explain-techniques-c = \markup \justify { Possible trills/glisses between adjacent fingerings are indicated, but futher colour fingerings are requested at various points. These should not alter the fundamental pitch material too radically, but should inflect the multiphonic differently in terms of timbre or microtonal details. }
+explain-techniques-c = \markup \justify { Possible trills/glisses between adjacent fingerings are indicated, but further colour fingerings are requested at various points. These should not alter the fundamental pitch material too radically, but should inflect the multiphonic differently in terms of timbre or microtonal details. }
 
 explain-techniques-d = \markup \justify { Whilst common notations are indicated here, further graphical notations are used in the score and explained in context. Graphical elements should be interpreted as indicative, rather than literal in terms of timing and gestural shaping. }
 
