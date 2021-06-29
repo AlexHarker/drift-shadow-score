@@ -1454,29 +1454,41 @@ exampleClusterOneC =
 		\option-base \markup {} \markup {} #6.25
 %		\option
 
-		g'''1.
-			^\markup \override #'(voffset . 5) \teeth-indicator
-			^\markup
-			{
-				\raise #3
-				\override #'(filled . #f) \path #gliss-thick
-				 #'((moveto 2 0)
-					(lineto 5 0)
-					(curveto 6 1.5 8 1.5 9 0)
-					(curveto 9.5 -1.5 10 2 10.5 0)
-					(curveto 11 -1.6 12.5 2.4 13.5 0)
-					(curveto 14.5 -1.5 15.8 1.6 16.5 0))
-			}
-		e'''1
-			^\markup \override #'(voffset . 3) \teeth-indicator
-			^\markup
-			{
-				\raise #1
-				\override #'(filled . #f) \path #gliss-thick
-				 #'((moveto 2 0)
-					(curveto 4 -0.5 5 1.5 7 1)
-					(curveto 8.5 -1.5 10.8 1.6 11.5 -2))
-			}
+		<<
+		{
+			g'''1.
+				^\markup \override #'(voffset . 5) \teeth-indicator
+				^\markup
+				{
+					\raise #3
+					\override #'(filled . #f) \path #gliss-thick
+					 #'((moveto 2 0)
+						(lineto 4 0)
+						(curveto 5.1 1.5 8.8 1.5 9.2 0)
+						(curveto 9.3 -1.5 9.4 -2 10.5 -1.6)
+						(curveto 11 -1.6 12.1 2.4 13.5 0)
+						(curveto 14.5 -1.5 15.8 1.6 16.8 0))
+				}
+			e'''1
+				^\markup \override #'(voffset . 4) \teeth-indicator
+				^\markup
+				{
+					\raise #2.1
+					\override #'(filled . #f) \path #gliss-thick
+					 #'((moveto 2 0)
+						(curveto 3.4 0 4.2 1.5 5 1.5)
+						(lineto 6 1.5)
+						(curveto 6.8 1.5 7.8 0.58 8.2 0)
+						(curveto 9.5 -1.3 10.8 1.6 11.5 1.2))
+				}
+		} 
+		\new Voice
+		{
+			s4 s8 \< s8 \> s8 s8 \< s8 \> s8 \< s8 \> s8 \! s4
+			s4 s8 \< s8 \> s8 \< s8 \> s8 s8 \!
+		} 
+		>>
+
 		\hide r8
 
 		\bracket ##t #7.5

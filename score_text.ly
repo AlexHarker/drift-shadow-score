@@ -29,7 +29,7 @@ textUnfoldingMainB =
 		\blankline
 		\score { \exampleUnfoldingUnderblow }
 		\blankline
-		\line { \variant-explain C with rearticulated focus pitches (articulate with tongue/smorzato/dynamics) }
+		\line { \variant-explain C with rearticulated focus pitches (articulate with tongue/smorzando/dynamics) }
 		\blankline
 		\score { \exampleOriginFocusRearticulate }
 	}
@@ -411,7 +411,7 @@ textClusterOneB =
 		\blankline
 		\score { \exampleClusterOneB }
 		\blankline
-		\line { \variant-explain C intersperse multiphonics slurred to high notes (+ gliss), timbral low notes and wide high teeth glisses }
+		\line { \variant-explain C intersperse multiphonics slurred to high notes (+ wobble), timbral low notes and high smorzando teeth tones wobbling between partials }
 		\blankline
 		\score { \exampleClusterOneC }
 	}
