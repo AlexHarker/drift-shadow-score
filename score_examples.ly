@@ -1591,13 +1591,18 @@ exampleDivisionDissolve =
 	{
 		<<
 		{
-			\override TextScript.extra-offset = #'(2 . -2.3)
+			\override TextScript.extra-offset = #'(2 . -3.5)
 			f'1
 			^\markup
 			{
   				\override #'(filled . #f) \path #gliss-thick
 				#'((moveto 0 0)
-					(curveto 4 -0.1 15 1 19 2.6))
+					(curveto 4 -0.1 3 1 5 1.6)
+					(curveto 5.8 1.0 6.5 -0.3 8 0.4)
+					(curveto 9 -0.3 9.5 0.4 10 1.1)
+					(curveto 11 -0.4 12 -0.7 13 0.6)
+					(curveto 14 -0.8 15 1.4 16 0.6)
+					(curveto 18.5 -0.1 19 0.5 20.3 1.2))
 			}
 			s1
 			\revert TextScript.extra-offset

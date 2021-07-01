@@ -495,7 +495,7 @@ textDivisionB =
 		\blankline
 		\line { (keep multiphonic static or change infrequently) }
 		\blankline
-		\line { \variant-explain A dissolve through lip or key gliss with breath noise  }
+		\line { \variant-explain A dissolve into noise (+ constrictions) through unstable lip and key trilling/wobble  }
 		\blankline
 		\score { \exampleDivisionDissolve }
 		\blankline
