@@ -292,7 +292,7 @@
 				\textDivisionB
 				#31.5 #27
 
-				\hspace #6.6
+				\hspace #1.5
 				\override #'(oneway . #t)
 				\form-link #0 #0 #10 #0
 				\hspace-form-link
