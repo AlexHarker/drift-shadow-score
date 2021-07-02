@@ -1,5 +1,5 @@
 
-#(define multi_display #f)
+#(define multi_display #t)
 
 \version "2.22.1"
 
