@@ -133,8 +133,8 @@ proportionalStrict =
 	  	\remove "Time_signature_engraver"
 	  	\remove "Staff_symbol_engraver"
 	  	\remove "Clef_engraver"
-		\override InstrumentName #'self-alignment-X = 0.4
-		\override InstrumentName #'font-size = 1
+		\override InstrumentName.self-alignment-X = 0.4
+		\override InstrumentName.font-size = 1
     }
 	\context
 	{
@@ -172,8 +172,8 @@ proportionalStave =
 	{
 		\Staff
 	  	\remove "Time_signature_engraver"
-		\override InstrumentName #'self-alignment-X = 0.4
-		\override InstrumentName #'font-size = 1
+		\override InstrumentName.self-alignment-X = 0.4
+		\override InstrumentName.font-size = 1
     }
 	\context
 	{
@@ -214,8 +214,8 @@ proportionalOptions =
 		\Staff
 	  	\remove "Time_signature_engraver"
 	  	\remove "Clef_engraver"
-		\override InstrumentName #'self-alignment-X = 0.4
-		\override InstrumentName #'font-size = 1
+		\override InstrumentName.self-alignment-X = 0.4
+		\override InstrumentName.font-size = 1
     }
 	\context
 	{
