@@ -673,7 +673,7 @@ textCentreForm =
 			\line \italic { intersperse multiphonic and glissandi/microtones into varied phrases }
 			\line \italic { elecs tracks speed/levels of activity/attack points/space and follow changes of section/idea }
 			\line { \null }
-			\line \italic { increasing blur the distinction between glissandi/microtones and multiphonics }
+			\line \italic { increasingly blur the distinction between glissandi/microtones and multiphonics }
 
 			\line \italic { create strong moments of focus, but also explore other materials in \reference-part "Part II" as indicated }
 			\line \bold { each time through try to make something new }
