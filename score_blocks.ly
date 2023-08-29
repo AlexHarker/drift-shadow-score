@@ -140,7 +140,7 @@ componentGround =
 	\MulThFvTh
 	s8
 	\option-markup
-		\markup { \override #'(offset . 1) \trill-gliss \trillSign 		\override #'(baseline-skip . 2.2) \center-column { \line { occassional } \line { flickering } } ##t }
+		\markup { \override #'(offset . 1) \trill-gliss \trillSign 		\override #'(baseline-skip . 2.2) \center-column { \line { occasional } \line { flickering } } ##t }
 	\MulThFvFo
 	\r-bracket
 	s4
@@ -268,7 +268,7 @@ sectionClusterOne =
 	% DOESN'T WORK ON INSTRUMENT!
 	%{
 	-markup
-	\markup { \override #'(offset . 1.9) \trill-gliss \trillSign 		\override #'(baseline-skip . 2.2) \center-column { \line { occassional } \line { rocking } }  ##t }
+	\markup { \override #'(offset . 1.9) \trill-gliss \trillSign 		\override #'(baseline-skip . 2.2) \center-column { \line { occasional } \line { rocking } }  ##t }
 	%}
 
 	s8

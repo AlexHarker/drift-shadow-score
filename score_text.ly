@@ -437,11 +437,11 @@ textClusterTwoB =
 		\line \italic { play either as \variant A or \variant B or morph between the two — \bold { continuously reorder avoiding close repetition/looping } }
 		\line \italic { elecs track speed }
 		\blankline
-		\line { \variant-explain A slow swells w/ occassional small pockets of faster change + accent }
+		\line { \variant-explain A slow swells w/ occasional small pockets of faster change + accent }
 		\blankline
 		\score { \exampleClusterTwoA }
 		\blankline
-		\line { \variant-explain B v. slow swells w/ occassional extremely long notes (till elecs responds) }
+		\line { \variant-explain B v. slow swells w/ occasional extremely long notes (till elecs responds) }
 		\blankline
 		\score { \exampleClusterTwoB }
 	}
@@ -754,7 +754,7 @@ textExtendC =
 		\blankline
 		\score { \exampleExtendStable }
 		\blankline
-		\line { \variant-explain B rapid flickering pitch selection with \bold { first block } (+ occassionally stable moments) }
+		\line { \variant-explain B rapid flickering pitch selection with \bold { first block } (+ occasionally stable moments) }
 		\blankline
 		\score { \exampleExtendRapidPitchSelection }
 		\blankline
