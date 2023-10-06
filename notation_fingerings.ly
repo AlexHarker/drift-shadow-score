@@ -849,7 +849,7 @@ returns @samp{1/3}."
 
 #(define (update-possb-list input-key possibility-list canonic-list)
   (if (null? possibility-list)
-      (ly:error (_ "woodwind markup error - invalid key or hole requested"))
+      (ly:error (G_ "woodwind markup error - invalid key or hole requested"))
       (if
        (assoc-get input-key (cdar possibility-list))
        (append
