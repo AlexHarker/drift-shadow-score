@@ -14,7 +14,7 @@ layoutSetup =
 		
 		proportionalNotationDuration = #(ly:make-moment 1/4)
  		\override SpacingSpanner.uniform-stretching = ##t
-
+ 		
 		\override BarLine.stencil = ##f
 		\override BarNumber.stencil = ##f
 	    \override Glissando.thickness = #3
