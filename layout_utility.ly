@@ -236,7 +236,7 @@ layoutArrivalNarrow =
     \context
     {
         \Score
-        \override SpacingSpanner.shortest-duration-space = 1.2 ©
+        \override SpacingSpanner.shortest-duration-space = 1.2
     }
 }
 
