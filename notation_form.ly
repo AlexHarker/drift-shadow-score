@@ -20,7 +20,7 @@ onStave =
         \revert TextScript.Y-extent
     #})
 
-% spacer that is equal to the onStave spacing for markup below the scaore
+% spacer that is equal to the onStave spacing for markup below the score
 
 staveSpacer =
 #(define-music-function ()()
