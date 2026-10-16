@@ -9,7 +9,8 @@
     tagline = ""    % removed
 }
 
-\version "2.22.1"    % necessary for upgrading to future LilyPond versions.
+
+\version "2.25.0"    % necessary for upgrading to future LilyPond versions.
 
 % LAYOUT
 

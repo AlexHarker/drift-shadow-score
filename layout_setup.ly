@@ -7,7 +7,7 @@
 }
 
 \pointAndClickOff
-\version "2.22.1"
+\version "2.25.0"
 
 % PAGE NUMBERS
 
@@ -30,6 +30,10 @@
 
 \paper
 {
+    % Use pre v2.25 vertical positioning defaults (spacing has been set in reference to these settings)
+    top-system-spacing.basic-distance = 1
+    top-markup-spacing.basic-distance = 0
+  
     #(set-paper-size "a3landscape")
     top-margin = 1\cm
     bottom-margin = 1\cm

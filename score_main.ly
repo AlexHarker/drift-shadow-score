@@ -6,7 +6,7 @@
 \include "score_text.ly"
 \include "layout_setup.ly"
 
-\version "2.22.1"
+\version "2.25.0"
 
 % TITLE PAGE
 
