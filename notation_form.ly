@@ -687,7 +687,6 @@ previous-arrow = \markup \override #'(oneway . #t) \form-link #0 #0 #0 #-5
     #}))
 
 
-
 % draw an insert marker
 
 #(define-markup-command (insert-marker layout props) ()
