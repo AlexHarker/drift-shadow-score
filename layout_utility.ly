@@ -12,8 +12,8 @@ layoutSetup =
         \Score
         \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/64)
 
-        proportionalNotationDuration = #(ly:make-moment 1/4)
-         \override SpacingSpanner.uniform-stretching = ##t
+        proportionalNotationDuration = #1/4
+        \override SpacingSpanner.uniform-stretching = ##t
 
         \override BarLine.stencil = ##f
         \override BarNumber.stencil = ##f
@@ -84,7 +84,7 @@ layoutDisplaceEnd =
     \context
     {
         \Score
-        proportionalNotationDuration = #(ly:make-moment 1/4)
+        proportionalNotationDuration = #1/4
          \override SpacingSpanner.uniform-stretching = ##t
     }
     \context
@@ -120,7 +120,7 @@ proportionalStrict =
         \override Hairpin.height = #0.4
         \override Hairpin.bound-padding = #1.5
 
-        proportionalNotationDuration = #(ly:make-moment 1/8)
+        proportionalNotationDuration = #1/8
         \override SpacingSpanner.shortest-duration-space = #1.4
          \override SpacingSpanner.uniform-stretching = ##t
         \override SpacingSpanner.strict-note-spacing = ##t
@@ -161,7 +161,7 @@ proportionalStave =
         \override Hairpin.height = #0.4
         \override Hairpin.bound-padding = #1.5
 
-        proportionalNotationDuration = #(ly:make-moment 1/8)
+        proportionalNotationDuration = #1/8
         \override SpacingSpanner.shortest-duration-space = #2
          \override SpacingSpanner.uniform-stretching = ##t
         \override SpacingSpanner.strict-note-spacing = ##t
@@ -201,7 +201,7 @@ proportionalOptions =
         \override Hairpin.height = #0.4
         \override Hairpin.bound-padding = #1.5
 
-        proportionalNotationDuration = #(ly:make-moment 1/8)
+        proportionalNotationDuration = #1/8
         \override SpacingSpanner.shortest-duration-space = #1.4
          \override SpacingSpanner.uniform-stretching = ##t
         \override SpacingSpanner.strict-note-spacing = ##t

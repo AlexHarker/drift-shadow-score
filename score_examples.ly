@@ -2182,7 +2182,7 @@ exampleBlockOneObssessive =
         \context
         {
             \Score
-            proportionalNotationDuration = #(ly:make-moment 1/16)
+            proportionalNotationDuration = #1/16
             \override SpacingSpanner.shortest-duration-space = #0.8
         }
     }
