@@ -375,7 +375,7 @@ hspace-optional = \markup \hspace #18.5
                 \draw-dashed-line #'(240 . 0)
                 %\vcenter \path #0.3
                 %#`((moveto 0 0)
-                 %.  (lineto 80 0))
+                %   (lineto 80 0))
             }
         }
     #}))
