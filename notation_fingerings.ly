@@ -2,12 +2,12 @@
 
 % This file modified from various Lilypond files:
 %
-% display-woodwind-diagrams.scm (part of Lilypond)and 
+% display-woodwind-diagrams.scm (part of Lilypond) and
 % define-woodwind-diagrams.scm
 % lily-library.scm
 % bezier-tools.scm
 
-% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 
 % bezier utilities
 
@@ -63,7 +63,7 @@ element is the RHS spline."
                            (list-ref bezier 3))))
     (cons left-side right-side)))
 
-% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 
 % definitions
 
@@ -553,7 +553,7 @@ returns @samp{1/3}."
             (if (= fill (expt (assoc-get 'R HOLE-FILL-LIST) 2))
              1
              (expt (/ fill (assoc-get 'R HOLE-FILL-LIST)) 2)))
-		pressed
+        pressed
         layout
         props))
       (column-circle-stencil radius thick fill pressed layout props)))
@@ -955,7 +955,7 @@ returns @samp{1/3}."
                     thick
                     (coord-apply (assoc-get 'xy-scale-function stencil-alist)
                                  xy-stretch)
-					pressed
+                    pressed
                     layout
                     props))
                (if (= 0 (assoc-get node draw-instructions))
@@ -964,7 +964,7 @@ returns @samp{1/3}."
                     radius
                     thick
                     (assoc-get node draw-instructions)
-					pressed
+                    pressed
                     layout
                     props)))
            (coord-scale
@@ -1314,8 +1314,8 @@ returns @samp{1/3}."
   #:properties ((size 1)
                 (thickness 0.1)
                 (graphical #t)
-				(pressed #f))
-  
+                (pressed #f))
+
   (let*  ((radius size)
           (thick (* size thickness))
           (display-graphic graphical)

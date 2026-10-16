@@ -6,10 +6,10 @@
 % BASIC SETUP ELEMENTS
 
 \header { 
-  tagline = ""  % removed 
+	tagline = ""	% removed 
 } 
 
-\version "2.22.1"  % necessary for upgrading to future LilyPond versions.
+\version "2.22.1"	% necessary for upgrading to future LilyPond versions.
 
 % LAYOUT
 
@@ -17,25 +17,25 @@
 {
 	\context 
 	{
-    	\Score
-       	\override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/128)
+		\Score
+		\override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/128)
 		\override BarLine.stencil = ##f
 		\override BarNumber.stencil = ##f
-    }
+	}
 	\context 
 	{
 		\Staff
-	  	\remove "Time_signature_engraver"
-      	\hide Stem
-	  	%\override Staff.AccidentalPlacement.padding = #0.2
-    }
+		\remove "Time_signature_engraver"
+		\hide Stem
+		%\override Staff.AccidentalPlacement.padding = #0.2
+	}
 }
 
 % SCORE
 
 \new Score
 {
-	\accidentalStyle dodecaphonic  
+	\accidentalStyle dodecaphonic
 
 	\MulFoEi
 	\MulOnThSv

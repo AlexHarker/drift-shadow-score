@@ -6,8 +6,8 @@
 
 onStave =
 #(define-music-function
-    (item main above hof vof)
-    (ly:music? markup? markup? number? number?)
+	(item main above hof vof)
+	(ly:music? markup? markup? number? number?)
 
 	#{
 		\override TextScript.extra-offset = #`(,hof . ,vof)
@@ -37,21 +37,21 @@ staveSpacer =
 
 bracket =
 #(define-music-function
-    (right offset)
-    (boolean? number?)
+	(right offset)
+	(boolean? number?)
 
-    (define rest #{ r4 #})
-    (define height 6)
-  	(define width 1)
-  	(define thick 0.3)
-  	(define rOffset 4)
-  	(define xA 1)
-  	(define xB 0)
-    (define xC 0.3)
+	(define rest #{ r4 #})
+	(define height 6)
+	(define width 1)
+	(define thick 0.3)
+	(define rOffset 4)
+	(define xA 1)
+	(define xB 0)
+	(define xC 0.3)
 
-  	(set! xA (if right (- 0 rOffset) width))
-    (set! xB (if right (- width rOffset) 0))
-    (set! xC (if right (- width (+ thick rOffset)) thick))
+	(set! xA (if right (- 0 rOffset) width))
+	(set! xB (if right (- width rOffset) 0))
+	(set! xC (if right (- width (+ thick rOffset)) thick))
 
 	 (set! rest (if right #{ r16 #} #{ r8. #}))
 
@@ -62,14 +62,14 @@ bracket =
 			\hcenter-in #width
 			\override #'(filled . #t) \path #0.1
 			#`((moveto ,xA 0)
-			  (lineto ,xB 0)
-			  (lineto ,xB ,(- 0 height))
-			  (lineto ,xA ,(- 0 height))
-			  (lineto ,xA ,(- thick height))
-			  (lineto ,xC ,(- thick height))
-			  (lineto ,xC ,(- 0 thick))
-			  (lineto ,xA ,(- 0 thick))
-    		  (closepath))
+			   (lineto ,xB 0)
+			   (lineto ,xB ,(- 0 height))
+			   (lineto ,xA ,(- 0 height))
+			   (lineto ,xA ,(- thick height))
+			   (lineto ,xC ,(- thick height))
+			   (lineto ,xC ,(- 0 thick))
+			   (lineto ,xA ,(- 0 thick))
+			   (closepath))
 		}
 		\markup {}
 		#0 #offset
@@ -79,8 +79,8 @@ bracket =
 
 parenthesis =
 #(define-music-function
-    (right offset)
-    (boolean? number?)
+	(right offset)
+	(boolean? number?)
 
 	#{
 		\onStave { r8 }
@@ -111,10 +111,10 @@ option-base =
 			{
 				\override #'(filled . #t) \path #0.1
 					#`((moveto ,(- width thick) 0)
-	  				  (lineto ,width ,0)
-      				  (lineto ,thick ,(- 0 height))
-	  				  (lineto 0 ,(- 0 height))
-	  				  (closepath))
+					   (lineto ,width ,0)
+					   (lineto ,thick ,(- 0 height))
+					   (lineto 0 ,(- 0 height))
+					   (closepath))
 				#main
 			}
 		}
@@ -144,7 +144,7 @@ option-arrow-markup =
 	(define ahalfheight 0.6)
 	(define ahalflength 1)
 	(define width 2)
-    (define height 5.5)
+	(define height 5.5)
 
 	#{
 		\option-base
@@ -161,7 +161,7 @@ option-arrow-markup =
 					#`((moveto ,width ,(- ahalfheight (/ height 2)))
 	 				   (lineto ,width ,(- (- 0 ahalfheight) (/ height 2)))
 	 				   (lineto ,(+ width ahalflength) ,(- (/ height 2)))
-             (closepath))
+			 (closepath))
 			}
 		}
 		#markup
@@ -180,11 +180,11 @@ option-brackets-markup =
 		\markup
 		{
 			\lower #3.7
-			\center-align \line 
-			{ 
-				\hspace #2 
+			\center-align \line
+			{
+				\hspace #2
 				\parenthesis-markup #4 ##f
-				\hspace #1 
+				\hspace #1
 				\parenthesis-markup #4 ##t
 			}
 		}
@@ -240,10 +240,10 @@ alt-sign = \alt-sign-markup \markup {}
 % a trill or gliss markup
 
 #(define-markup-command (trill-gliss layout props main details option) (markup? markup? boolean?)
-	 #:properties ((width 6) (offset 0))
-    (define ahwidth 0.5)
-    (define awidth 1.2)
-    (define aheight 0.7)
+	#:properties ((width 6) (offset 0))
+	(define ahwidth 0.5)
+	(define awidth 1.2)
+	(define aheight 0.7)
 	(define thick 0.15)
 	(define voffset (if option 5.8 7.5))
 
@@ -258,15 +258,15 @@ alt-sign = \alt-sign-markup \markup {}
 				\override #'(line-join-style . miter)
 				\override #'(filled . #f) \path #thick
 				#`((moveto 0 0)
-		  	   		(lineto ,awidth 0)
-			   		(moveto ,width 0)
-		   	   		(lineto ,(- width awidth) 0)
-			   		(moveto ,ahwidth ,(/ aheight 2))
-			   		(lineto 0 0)
-			   		(lineto ,ahwidth ,(- 0 (/ aheight 2)))
-			   		(moveto ,(- width ahwidth) ,(/ aheight 2))
-			   		(lineto ,width 0)
-			   		(lineto ,(- width ahwidth) ,(- 0 (/ aheight 2))))
+				   (lineto ,awidth 0)
+				   (moveto ,width 0)
+				   (lineto ,(- width awidth) 0)
+				   (moveto ,ahwidth ,(/ aheight 2))
+				   (lineto 0 0)
+				   (lineto ,ahwidth ,(- 0 (/ aheight 2)))
+				   (moveto ,(- width ahwidth) ,(/ aheight 2))
+				   (lineto ,width 0)
+				   (lineto ,(- width ahwidth) ,(- 0 (/ aheight 2))))
 				\translate #`(,offset . ,(+ voffset 2.1))
 				\override #'(font-size . -2)
 				\hcenter-in #width { #main }
@@ -280,7 +280,7 @@ alt-sign = \alt-sign-markup \markup {}
 % a time bracket
 
 #(define-markup-command (time-bracket layout props time width) (markup? number?)
-    (define height 1.2)
+	(define height 1.2)
 	(define thick 0.1)
 
 (interpret-markup layout props
@@ -292,9 +292,9 @@ alt-sign = \alt-sign-markup \markup {}
 			\override #'(line-join-style . miter)
 			\override #'(filled . #f) \path #thick
 			#`((moveto 0 ,height)
-		  	   (lineto 0 0)
+			   (lineto 0 0)
 			   (moveto ,width ,height)
-		   	   (lineto ,width 0)
+			   (lineto ,width 0)
 			   (moveto 0 ,(/ height 2))
 			   (lineto ,width ,(/ height 2)))
 			\override #'(font-size . -1)
@@ -314,7 +314,7 @@ alt-sign = \alt-sign-markup \markup {}
 			\time-bracket \line { c. \concat { #min \hspace #0.3 - \hspace #0.3 #max "\"" } } #width
 		}
 	#}))
-	
+
 
 % IDEA BOXES / REPRESENTATION / EXPLANATIONS
 
@@ -348,47 +348,47 @@ alt-sign = \alt-sign-markup \markup {}
 % represent an idea
 
 #(define-markup-command (section-idea layout props name) (markup?)
-	 #:properties ((fsize 0.6))
+	#:properties ((fsize 0.6))
 
 (interpret-markup layout props
 	#{
 		\markup
 		{
-  			\box \pad-markup #0.5 \normal-text \bold { #name }
+			\box \pad-markup #0.5 \normal-text \bold { #name }
 		}
 	#}))
 
 % represent an idea
 
 #(define-markup-command (idea layout props name) (markup?)
-	 #:properties ((fsize 0.6))
+	#:properties ((fsize 0.6))
 
 (interpret-markup layout props
 	#{
 		\markup
 		{
-  			\box \pad-markup #0.3 \normal-text \bold { #name }
+			\box \pad-markup #0.3 \normal-text \bold { #name }
 		}
 	#}))
 
 % represent a variant
 
 #(define-markup-command (variant layout props name) (markup?)
-	 #:properties ((fsize 0.6))
+	#:properties ((fsize 0.6))
 
 (interpret-markup layout props
 	#{
 		\markup
 		{
 			\idea #name
-  			%\override #'(circle-padding . 0.5) \circle \normal-text \bold { #name }
+			%\override #'(circle-padding . 0.5) \circle \normal-text \bold { #name }
 		}
 	#}))
 
 % explain a variant
 
 #(define-markup-command (variant-explain layout props name) (markup?)
-	 #:properties ((fsize 0.6))
+	#:properties ((fsize 0.6))
 
 (interpret-markup layout props
 	#{
@@ -404,18 +404,18 @@ alt-sign = \alt-sign-markup \markup {}
 
 (interpret-markup layout props
 	#{
-		\markup 
+		\markup
 		{
-			\line 			
-			{ 
-				\vcenter \parenthesis-markup #4 ##f 
-		  		\vcenter \idea #markup
-				\vcenter \parenthesis-markup #4 ##t 
+			\line
+			{
+				\vcenter \parenthesis-markup #4 ##f
+				\vcenter \idea #markup
+				\vcenter \parenthesis-markup #4 ##t
 			}
 		}
 	#}))
 
-			
+
 
 % ARROW LINKS
 
@@ -435,7 +435,7 @@ alt-sign = \alt-sign-markup \markup {}
 % draw an arrowhead
 
 #(define-markup-command (form-arrowhead layout props tipX tipY angle) (number? number? number?)
-	 #:properties ((width 1.6) (length 2.2))
+	#:properties ((width 1.6) (length 2.2))
 
 (define xl 0)
 (define yl 0)
@@ -465,25 +465,25 @@ alt-sign = \alt-sign-markup \markup {}
 				\override #'(filled . #t)
 				\override #'(line-join-style . miter) \path #0.1
 				#`((moveto ,xl ,yl)
-			  	  (lineto ,xr ,yr)
-			   	  (lineto ,(+ tipX (car rotD)) ,(+ tipY (cdr rotD)))
-			   	  (lineto ,(+ tipX (car rotC)) ,(+ tipY (cdr rotC)))
-   			   	  (closepath))
+				   (lineto ,xr ,yr)
+				   (lineto ,(+ tipX (car rotD)) ,(+ tipY (cdr rotD)))
+				   (lineto ,(+ tipX (car rotC)) ,(+ tipY (cdr rotC)))
+				   (closepath))
 			}
 
 			\override #'(filled . #t)
 			\override #'(line-join-style . miter) \path #0.1
 			#`((moveto ,tipX ,tipY)
-			  (lineto ,xl ,yl)
-			  (lineto ,xr ,yr)
-			  (closepath))
+			   (lineto ,xl ,yl)
+			   (lineto ,xr ,yr)
+			   (closepath))
 		}
 	#}))
 
 % draw a direct link
 
 #(define-markup-command (form-link layout props startX startY endX endY) (number? number? number? number?)
-	 #:properties ((oneway #f))
+	#:properties ((oneway #f))
 
 (define midY (/ (+ startY endY) 2))
 (define angle (angle-points startX startY endX endY))
@@ -498,10 +498,10 @@ alt-sign = \alt-sign-markup \markup {}
 		{
 			\overlay
 			{
-	    		\override #'(filled . #f)
+				\override #'(filled . #f)
 				\override #'(line-cap-style . butt) \path #0.2
 				#`((moveto ,startX ,startY)
-			  	  (lineto ,endX ,endY))
+				   (lineto ,endX ,endY))
 
 				#startArrow
 				\form-arrowhead #endX #endY #(+ angle 180)
@@ -512,7 +512,7 @@ alt-sign = \alt-sign-markup \markup {}
 % draw an S curve link
 
 #(define-markup-command (form-s-curve layout props startX startY endX endY) (number? number? number? number?)
-	 #:properties ((hinside 0.05) (vinside 0.15) (oneway #f) (anglea 0) (angleb 0))
+	#:properties ((hinside 0.05) (vinside 0.15) (oneway #f) (anglea 0) (angleb 0))
 
 (define hof (if (> startX endX) (- 0 (* hinside (- startX endX))) (* hinside (- endX startX))))
 (define vof (if (> startY endY) (- 0 (* vinside (- startY endY))) (* vinside (- endY startY))))
@@ -535,7 +535,7 @@ alt-sign = \alt-sign-markup \markup {}
 				\override #'(filled . #f)
 				\override #'(line-cap-style . butt) \path #0.2
 				#`((moveto ,startX ,startY)
-			  	  (curveto ,(+ startX hof) ,(- endY vof) ,(- endX hof) ,(+ startY vof) ,endX ,endY))
+				   (curveto ,(+ startX hof) ,(- endY vof) ,(- endX hof) ,(+ startY vof) ,endX ,endY))
 
 				#startArrow
 				\form-arrowhead #endX #endY #angleB
@@ -546,7 +546,7 @@ alt-sign = \alt-sign-markup \markup {}
 % draw a rounded curve link
 
 #(define-markup-command (form-rounded-curve layout props startX startY endX endY) (number? number? number? number?)
-	 #:properties ((hround 9) (vround 9) (oneway #f))
+	#:properties ((hround 9) (vround 9) (oneway #f))
 
 (define midY (/ (+ startY endY) 2))
 (define angle (if (> startY endY) 0 180))
@@ -568,15 +568,15 @@ alt-sign = \alt-sign-markup \markup {}
 		\markup
 		{
 			\overlay
-      		{
-        		\override #'(filled . #f)
-			  	\override #'(line-cap-style . butt) \path #0.2
-			  	#`((moveto ,startX ,startY)
-			      (lineto ,startX ,(- midY vof))
-			  	  (curveto ,startX ,midY ,startX ,midY ,(+ startX hof) ,midY)
-			  	  (lineto ,(- endX hof) ,midY )
-			      (curveto , endX ,midY , endX ,midY ,endX ,(+ midY vof))
-			      (lineto ,endX ,endY))
+			{
+				\override #'(filled . #f)
+				\override #'(line-cap-style . butt) \path #0.2
+				#`((moveto ,startX ,startY)
+				   (lineto ,startX ,(- midY vof))
+				   (curveto ,startX ,midY ,startX ,midY ,(+ startX hof) ,midY)
+				   (lineto ,(- endX hof) ,midY )
+				   (curveto , endX ,midY , endX ,midY ,endX ,(+ midY vof))
+				   (lineto ,endX ,endY))
 
 				#startArrow
 				\form-arrowhead #endX #endY #(+ angle 180)
@@ -587,7 +587,7 @@ alt-sign = \alt-sign-markup \markup {}
 % draw an angled curve link
 
 #(define-markup-command (form-angle-curve layout props startX startY endX endY) (number? number? number? number?)
-	 #:properties ((oneway #f))
+	#:properties ((oneway #f))
 
 (define midY (/ (+ startY endY) 2))
 (define angle (if (> startY endY) 0 180))
@@ -605,9 +605,9 @@ alt-sign = \alt-sign-markup \markup {}
 				\override #'(filled . #f)
 				\override #'(line-cap-style . butt) \path #0.2
 				#`((moveto ,startX ,startY)
-				  (lineto ,startX ,midY)
-				  (lineto ,endX ,midY)
-			  	  (lineto ,endX ,endY))
+				   (lineto ,startX ,midY)
+				   (lineto ,endX ,midY)
+				   (lineto ,endX ,endY))
 
 				#startArrow
 				\form-arrowhead #endX #endY #(+ angle 180)
@@ -618,7 +618,7 @@ alt-sign = \alt-sign-markup \markup {}
 % draw a curved link between two points
 
 #(define-markup-command (form-curve layout props startX startY endX endY) (number? number? number? number?)
-	 #:properties ((pdist 15) (ldist 25) (oneway #f) (anglea 0) (angleb 0))
+	#:properties ((pdist 15) (ldist 25) (oneway #f) (anglea 0) (angleb 0))
 
 (define cax 0)
 (define cay 0)
@@ -654,7 +654,7 @@ alt-sign = \alt-sign-markup \markup {}
 				\override #'(filled . #f)
 				\override #'(line-cap-style . butt) \path #0.2
 				#`((moveto ,startX ,startY)
-     			   (curveto ,cax ,cay ,cbx ,cby ,endX ,endY))
+	 			   (curveto ,cax ,cay ,cbx ,cby ,endX ,endY))
 
 				#startArrow
 				\form-arrowhead #endX #endY #angleB
@@ -669,7 +669,7 @@ previous-arrow = \markup \override #'(oneway . #t) \form-link #0 #0 #0 #-5
 % draw a markup for previous ideas
 
 #(define-markup-command (arrive-from layout props markup) (markup-list?)
-	 #:properties ((offset 12))
+	#:properties ((offset 12))
 
 (interpret-markup layout props
 	#{
@@ -682,16 +682,16 @@ previous-arrow = \markup \override #'(oneway . #t) \form-link #0 #0 #0 #-5
 		{
 			#markup
 			\previous-arrow
-		}						
+		}
 
 	#}))
 
-			
+
 
 % draw an insert marker
 
 #(define-markup-command (insert-marker layout props) ()
-	 #:properties ((width 10) (height 2) (aheight 3) (aoffset -1.5) (insert-width 4))
+	#:properties ((width 10) (height 2) (aheight 3) (aoffset -1.5) (insert-width 4))
 
 (define xA (/ (- width insert-width) 2))
 (define xB 0)
@@ -704,18 +704,18 @@ previous-arrow = \markup \override #'(oneway . #t) \form-link #0 #0 #0 #-5
 		{
 			\overlay
 			{
-	    		\override #'(filled . #f)
+				\override #'(filled . #f)
 				\override #'(line-cap-style . butt) \path #0.2
 				#`((moveto 0 0)
-			  	  (lineto ,xA 0)
-				  (moveto ,xA ,(/ height 2))
-			  	  (lineto ,xA ,(- 0 (/ height 2)))
-				  (moveto ,xB ,(/ height 2))
-			  	  (lineto ,xB ,(- 0 (/ height 2)))
-				  (moveto ,xB 0)
-			  	  (lineto ,width 0)
-				  (moveto ,(/ width 2) ,aoffset)
-			  	  (lineto ,(/ width 2) ,(+ aoffset aheight)))
+				   (lineto ,xA 0)
+				   (moveto ,xA ,(/ height 2))
+				   (lineto ,xA ,(- 0 (/ height 2)))
+				   (moveto ,xB ,(/ height 2))
+				   (lineto ,xB ,(- 0 (/ height 2)))
+				   (moveto ,xB 0)
+				   (lineto ,width 0)
+				   (moveto ,(/ width 2) ,aoffset)
+				   (lineto ,(/ width 2) ,(+ aoffset aheight)))
 
 				\override #'(width . 1.2)
 				\override #'(length . 1.4)
@@ -729,7 +729,7 @@ previous-arrow = \markup \override #'(oneway . #t) \form-link #0 #0 #0 #-5
 % repeat numbers
 
 #(define-markup-command (repeat-min layout props min) (markup?)
-	 #:properties ()
+	#:properties ()
 
 (interpret-markup layout props
 	#{
@@ -740,7 +740,7 @@ previous-arrow = \markup \override #'(oneway . #t) \form-link #0 #0 #0 #-5
 	#}))
 
 #(define-markup-command (repeat-range layout props min max) (markup? markup?)
-	 #:properties ()
+	#:properties ()
 
 (interpret-markup layout props
 	#{
@@ -758,32 +758,32 @@ section =
 	(markup? markup?)
 
 (define rep #{ \markup \override #'(font-name . "Arial Bold")
-						\override #'(font-size . 1) \concat { x \hspace #0.9 #repeats } #}) 
+						\override #'(font-size . 1) \concat { x \hspace #0.9 #repeats } #})
 
 	#{
-		\new Staff \with 
-		{ 
-			instrumentName = \markup 
+		\new Staff \with
+		{
+			instrumentName = \markup
 			{
 				\column
 				{
-					\hcenter-in #13 \line 
+					\hcenter-in #13 \line
 					{
 						\with-color #white
 						\override #'(font-name . "Arial Bold")
-						\override #'(font-size . 1) \concat { x \hspace #0.9 #repeats } 
-					} 
+						\override #'(font-size . 1) \concat { x \hspace #0.9 #repeats }
+					}
 					\hcenter-in #13 \column
 					{
 						\pad-around #1 \section-idea #name
 					}
-					\hcenter-in #13 \line 
+					\hcenter-in #13 \line
 					{
 						\override #'(font-name . "Arial Bold")
-						\override #'(font-size . 1) \concat { x \hspace #0.9 #repeats } 
-					} 
+						\override #'(font-size . 1) \concat { x \hspace #0.9 #repeats }
+					}
 				}
-			}	
+			}
 		}
 
 		\accidentalStyle dodecaphonic
@@ -797,15 +797,15 @@ insert-section =
 	(markup? markup?)
 
 	#{
-		\new Staff \with 
-		{ 
-			instrumentName = \markup 
+		\new Staff \with
+		{
+			instrumentName = \markup
 			{
 				\column
 				{
 					\hcenter-in #13 \line
 					{
-						\vcenter \insert-marker	
+						\vcenter \insert-marker
 					}
 					\hcenter-in #13 \column
 					{
@@ -813,13 +813,13 @@ insert-section =
 					}
 					\combine
 					\vspace #1
-					\hcenter-in #13 \line 
+					\hcenter-in #13 \line
 					{
 						\override #'(font-name . "Arial Bold")
-						\override #'(font-size . 1) \raise #1.6 \concat { x \hspace #0.9 #repeats } 
-					} 					
+						\override #'(font-size . 1) \raise #1.6 \concat { x \hspace #0.9 #repeats }
+					}
 				}
-			}	
+			}
 		}
 
 		\accidentalStyle dodecaphonic

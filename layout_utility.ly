@@ -9,22 +9,22 @@ layoutSetup =
 	indent = #26
 	\context
 	{
-   		\Score
-   		\override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/64)
+		\Score
+		\override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/64)
 		
 		proportionalNotationDuration = #(ly:make-moment 1/4)
  		\override SpacingSpanner.uniform-stretching = ##t
  		
 		\override BarLine.stencil = ##f
 		\override BarNumber.stencil = ##f
-	    \override Glissando.thickness = #3
-  	}
+		\override Glissando.thickness = #3
+	}
 	\context
 	{
 		\Staff
-  		\remove "Time_signature_engraver"
-   		\hide Stem
-   	}
+		\remove "Time_signature_engraver"
+		\hide Stem
+	}
 }
 
 layoutNarrower =
@@ -33,7 +33,7 @@ layoutNarrower =
 	\layoutSetup
 	\context
 	{
-   		\Score
+		\Score
 		\override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/32)
 	}
 }
@@ -44,27 +44,27 @@ layoutNarrow =
 	\layoutSetup
 	\context
 	{
-   		\Score
+		\Score
 		\override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
 	}
 }
 
 layoutNoIndent =
-\layout 
+\layout
 {
 	\layoutSetup
  	indent = #0
 }
 
 layoutNarrowerNoIndent =
-\layout 
+\layout
 {
 	\layoutNarrower
  	indent = #0
 }
 
 layoutNarrowNoIndent =
-\layout 
+\layout
 {
 	\layoutNarrow
  	indent = #0
@@ -78,16 +78,16 @@ layoutEnd =
 }
 
 layoutDisplaceEnd =
-\layout 
+\layout
 {
 	\layoutNoIndent
 	\context
 	{
-    	\Score
+		\Score
 		proportionalNotationDuration = #(ly:make-moment 1/4)
  		\override SpacingSpanner.uniform-stretching = ##t
-    }
-	\context 
+	}
+	\context
 	{
 		\Voice
 		\consists "Duration_line_engraver"
@@ -96,15 +96,15 @@ layoutDisplaceEnd =
 }
 
 layoutClusterOne =
-\layout 
+\layout
 {
-	\layoutNarrow 
+	\layoutNarrow
 	\context
 	{
-    	\Score
-		\override SpacingSpanner.shortest-duration-space = 1.7 
-	} 
-} 
+		\Score
+		\override SpacingSpanner.shortest-duration-space = 1.7
+	}
+}
 
 
 proportionalStrict =
@@ -114,7 +114,7 @@ proportionalStrict =
 	#(layout-set-staff-size 14)
 	\context
 	{
-    	\Score
+		\Score
 		\override BarLine.stencil = ##f
 		\override BarNumber.stencil = ##f
 		\override Hairpin.height = #0.4
@@ -125,26 +125,26 @@ proportionalStrict =
  		\override SpacingSpanner.uniform-stretching = ##t
 		\override SpacingSpanner.strict-note-spacing = ##t
 
-	    \override Glissando.thickness = #1.5
-    }
+		\override Glissando.thickness = #1.5
+	}
 	\context
 	{
 		\Staff
-	  	\remove "Time_signature_engraver"
-	  	\remove "Staff_symbol_engraver"
-	  	\remove "Clef_engraver"
+		\remove "Time_signature_engraver"
+		\remove "Staff_symbol_engraver"
+		\remove "Clef_engraver"
 		\override InstrumentName.self-alignment-X = 0.4
 		\override InstrumentName.font-size = 1
-    }
+	}
 	\context
 	{
 		\Voice
-	    \consists "Duration_line_engraver"
-    	\omit Stem
-	    \omit Flag
-    	\omit Beam
-    	\omit Dots
-	    \override NoteHead.duration-log = 2
+		\consists "Duration_line_engraver"
+		\omit Stem
+		\omit Flag
+		\omit Beam
+		\omit Dots
+		\override NoteHead.duration-log = 2
 	}
 }
 
@@ -155,7 +155,7 @@ proportionalStave =
 	#(layout-set-staff-size 13)
 	\context
 	{
-    	\Score
+		\Score
 		\override BarLine.stencil = ##f
 		\override BarNumber.stencil = ##f
 		\override Hairpin.height = #0.4
@@ -166,24 +166,24 @@ proportionalStave =
  		\override SpacingSpanner.uniform-stretching = ##t
 		\override SpacingSpanner.strict-note-spacing = ##t
 
-	    \override Glissando.thickness = #1.5
-    }
+		\override Glissando.thickness = #1.5
+	}
 	\context
 	{
 		\Staff
-	  	\remove "Time_signature_engraver"
+		\remove "Time_signature_engraver"
 		\override InstrumentName.self-alignment-X = 0.4
 		\override InstrumentName.font-size = 1
-    }
+	}
 	\context
 	{
 		\Voice
-	    \consists "Duration_line_engraver"
-    	\omit Stem
-	    \omit Flag
-    	\omit Beam
-    	\omit Dots
-	    \override NoteHead.duration-log = 2
+		\consists "Duration_line_engraver"
+		\omit Stem
+		\omit Flag
+		\omit Beam
+		\omit Dots
+		\override NoteHead.duration-log = 2
 	}
 }
 
@@ -195,7 +195,7 @@ proportionalOptions =
 	#(layout-set-staff-size 14)
 	\context
 	{
-    	\Score
+		\Score
 		\override BarLine.stencil = ##f
 		\override BarNumber.stencil = ##f
 		\override Hairpin.height = #0.4
@@ -206,61 +206,61 @@ proportionalOptions =
  		\override SpacingSpanner.uniform-stretching = ##t
 		\override SpacingSpanner.strict-note-spacing = ##t
 
-	    \override Glissando.thickness = #1.5
+		\override Glissando.thickness = #1.5
 		\override StaffSymbol.transparent = ##t
-    }
+	}
 	\context
 	{
 		\Staff
-	  	\remove "Time_signature_engraver"
-	  	\remove "Clef_engraver"
+		\remove "Time_signature_engraver"
+		\remove "Clef_engraver"
 		\override InstrumentName.self-alignment-X = 0.4
 		\override InstrumentName.font-size = 1
-    }
+	}
 	\context
 	{
 		\Voice
-	    \consists "Duration_line_engraver"
-    	\omit Stem
-	    \omit Flag
-    	\omit Beam
-    	\omit Dots
-	    \override NoteHead.duration-log = 2
+		\consists "Duration_line_engraver"
+		\omit Stem
+		\omit Flag
+		\omit Beam
+		\omit Dots
+		\override NoteHead.duration-log = 2
 	}
 }
 
 layoutArrivalNarrow =
-\layout 
+\layout
 {
-	\proportionalStrict 
+	\proportionalStrict
 	\context
 	{
-    	\Score
-		\override SpacingSpanner.shortest-duration-space = 1.2 
-	} 
-} 
+		\Score
+		\override SpacingSpanner.shortest-duration-space = 1.2 ©
+	}
+}
 
 layoutExtendNarrow =
-\layout 
+\layout
 {
-	\proportionalStrict 
+	\proportionalStrict
 	\context
 	{
-    	\Score
-		\override SpacingSpanner.shortest-duration-space = 1.1 
-	} 
-} 
+		\Score
+		\override SpacingSpanner.shortest-duration-space = 1.1
+	}
+}
 
 layoutDivisionNarrow =
-\layout 
+\layout
 {
-	\proportionalStrict 
+	\proportionalStrict
 	\context
 	{
-    	\Score
-		\override SpacingSpanner.shortest-duration-space = 1.2 
-	} 
-} 
+		\Score
+		\override SpacingSpanner.shortest-duration-space = 1.2
+	}
+}
 
 % LAYOUT FUNCTIONS
 
@@ -275,13 +275,13 @@ layoutDivisionNarrow =
 
 #(define-markup-command (overlay layout props markups) (markup-list?)
 
-    (interpret-markup layout props
+	(interpret-markup layout props
 	(markup (combine-markups markups))))
 
 
 #(define-markup-command (score-text layout props score layoutTweak text inset) (ly:music? ly:output-def? markup? number?)
 
-    (interpret-markup layout props
+	(interpret-markup layout props
 	#{
 		\markup
 		{
@@ -302,7 +302,7 @@ layoutDivisionNarrow =
 
 (define text-placed (if (not (eq? vSpaceB 0)) #{ \markup \raise #vSpaceB  #textB #} #{ \markup \vcenter #textB #}))
 
-    (interpret-markup layout props
+	(interpret-markup layout props
 	#{
 		\markup
 		{
@@ -315,21 +315,21 @@ layoutDivisionNarrow =
 
 #(define-markup-command (hspace-normal layout props) ()
 
-    (interpret-markup layout props
+	(interpret-markup layout props
 	#{
 		\markup { \hspace #4 }
 	#}))
 
 #(define-markup-command (hspace-tight layout props) ()
 
-    (interpret-markup layout props
+	(interpret-markup layout props
 	#{
 		\markup { \hspace #3 }
 	#}))
 
 #(define-markup-command (hspace-form-link layout props) ()
 
-    (interpret-markup layout props
+	(interpret-markup layout props
 	#{
 		\markup { \hspace #2 }
 	#}))
@@ -338,21 +338,21 @@ hspace-optional = \markup \hspace #18.5
 
 #(define-markup-command (score-component-normal layout props score layoutTweak textA textB hSpaceA vSpaceB) (ly:music? ly:output-def? markup? markup? number? number?)
 
-    (interpret-markup layout props
+	(interpret-markup layout props
 	#{
 		\markup \score-component #score #layoutTweak #textA #textB #hSpaceA #4 #vSpaceB
 	#}))
 
 #(define-markup-command (score-component-tight layout props score layoutTweak textA textB hSpaceA vSpaceB) (ly:music? ly:output-def? markup? markup? number? number?)
 
-    (interpret-markup layout props
+	(interpret-markup layout props
 	#{
 		\markup \score-component #score #layoutTweak #textA #textB #hSpaceA #3 #vSpaceB
 	#}))
 
 #(define-markup-command (form-component layout props markup) (markup?)
 
-    (interpret-markup layout props
+	(interpret-markup layout props
 	#{
 		\markup
 		{
@@ -364,18 +364,18 @@ hspace-optional = \markup \hspace #18.5
 
 #(define-markup-command (divider layout props height) (number?)
 
-    (interpret-markup layout props
+	(interpret-markup layout props
 	#{
 		\markup
 		{
-			\fill-line 
+			\fill-line
 			{
 				\combine
 				\vcenter \vspace #height
 				\draw-dashed-line #'(240 . 0)
 				%\vcenter \path #0.3
 				%#`((moveto 0 0)
-     			%   (lineto 80 0))
+	 			%.  (lineto 80 0))
 			}
 		}
 	#}))

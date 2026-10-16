@@ -18,12 +18,12 @@ textDSize = #'(font-size . 2)
 
 #(define-markup-command (number-font layout props markup) (markup?)
 
-    (interpret-markup layout props
+	(interpret-markup layout props
 	#{
 		\markup
 		{
-			\override #'(font-encoding . fetaText) 
-			\override #'(font-size . -3)		
+			\override #'(font-encoding . fetaText)
+			\override #'(font-size . -3)
 			#markup
 		}
 	#}))
@@ -43,31 +43,31 @@ exampleHeading = \markup { \bold "e.g." }
 
 #(define-markup-command (dynamic-space layout props) ()
 
-    (interpret-markup layout props
+	(interpret-markup layout props
 	#{
 		\markup
 		{
-			\hspace #0.5		
+			\hspace #0.5
 		}
 	#}))
 
 #(define-markup-command (block-dynamics layout props markup) (markup?)
 
-    (interpret-markup layout props
+	(interpret-markup layout props
 	#{
 		\markup
 		{
-			#markup \dynamic-space		
+			#markup \dynamic-space
 		}
 	#}))
 
 #(define-markup-command (block-dynamic layout props dynamic) (markup?)
 
-    (interpret-markup layout props
+	(interpret-markup layout props
 	#{
 		\markup
 		{
-			\block-dynamics { \dynamic #dynamic }	
+			\block-dynamics { \dynamic #dynamic }
 		}
 	#}))
 
@@ -86,11 +86,11 @@ exampleHeading = \markup { \bold "e.g." }
 
 #(define-markup-command (parenthesis-markup layout props size right) (number? boolean?)
 
-(interpret-markup layout props
+	(interpret-markup layout props
 	#{
 		\markup
 		{
-			\override #`(font-size . ,size) 
+			\override #`(font-size . ,size)
 			\override #'(font-name . "Source Sans Pro")
 			#(if right #{ \markup ) #} #{ \markup ( #})
 		}
@@ -106,23 +106,23 @@ optional-add-or = \markup { \override #'(font-size . 3) \vcenter { \override #'(
 
 % breath mark
 
-breathMark = ^\markup 
-{ 
-	\concat 
-	{ 
-		\vcenter \parenthesis-markup #-1 ##f 
+breathMark = ^\markup
+{
+	\concat
+	{
+		\vcenter \parenthesis-markup #-1 ##f
 		\hspace #0.1
-		\vcenter \musicglyph "scripts.rcomma" 
+		\vcenter \musicglyph "scripts.rcomma"
 		\hspace #0.1
-		\vcenter \parenthesis-markup #-1 ##t 
-	} 
+		\vcenter \parenthesis-markup #-1 ##t
+	}
 }
 
 % selection range
 
 #(define-markup-command (selection-range layout props min max) (markup? markup?)
 
-(interpret-markup layout props
+	(interpret-markup layout props
 	#{
 		\markup
 		{
@@ -143,7 +143,7 @@ noiseBurst =
 	   (curveto -0.1 -0.3 1.9 -0.7 1.2 -0.6)
 	   (curveto 1.9 -0.5 -0.1 -0.9 -0.2 -0.8)
 	   (curveto -0.1 -0.7 1.9 -1.1 0.9 -1.0)
-  	   (curveto 1.9 -0.9 -0.1 -1.3 0 -1.2)
+	   (curveto 1.9 -0.9 -0.1 -1.3 0 -1.2)
 	   (curveto -0.1 -1.1 1.9 -1.5 0.8 -1.4))
 }
 
