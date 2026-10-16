@@ -398,8 +398,10 @@ exampleOriginFocusRearticulate =
 
 				%<g'' b'' c''' b'''>
 				<g'' b'' b'''>2 \-
-				\dashedDuration <g'' b'' b'''>2 \-				\once \hide NoteHead <g'' b'' b'''>2 \-
-				\dashedDuration <g'' b'' b'''>2. \-				\once \hide NoteHead <g'' b'' b'''>2 \-
+				\dashedDuration <g'' b'' b'''>2 \-
+				\once \hide NoteHead <g'' b'' b'''>2 \-
+				\dashedDuration <g'' b'' b'''>2. \-
+				\once \hide NoteHead <g'' b'' b'''>2 \-
 			}
 		}
 	>>
@@ -997,7 +999,8 @@ examplePushUpward =
 			{
 				\hide r2
 				\dashedDuration <d'' d''' g'''>4 \-
-				\dashedDuration <b'' d''' g'''>4 \-				\dashedDuration <d'' b'' g'''>8. \-
+				\dashedDuration <b'' d''' g'''>4 \-
+				\dashedDuration <d'' b'' g'''>8. \-
 				\hide r2
 			}
 		} >>

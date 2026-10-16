@@ -560,7 +560,7 @@ textLoopsForm =
 
 				\lower #4.8 \vcenter \concat
 				{
-				x \hspace #0.9 \repeat-range 3 8
+					x \hspace #0.9 \repeat-range 3 8
 				}
 				\hspace #2
 			}

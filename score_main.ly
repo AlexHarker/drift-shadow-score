@@ -66,7 +66,8 @@
 					\line
 					{
 						\score-component-normal
-						\componentUnfoldingGlisses						\layoutSetup
+						\componentUnfoldingGlisses
+						\layoutSetup
 						\textUnfoldingGlissesA
 						\textUnfoldingGlissesB
 						#27 #32
