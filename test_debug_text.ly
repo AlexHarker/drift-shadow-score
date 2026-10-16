@@ -7,13 +7,13 @@
 % LAYOUT
 
 spacer = \markup {
-	\column {
-		\line { \null }
-		\line { \null }
-		\line { \null }
-		\line { \null }
-		\line { \null }
-	}
+    \column {
+        \line { \null }
+        \line { \null }
+        \line { \null }
+        \line { \null }
+        \line { \null }
+    }
 }
 
 \textClusterOne

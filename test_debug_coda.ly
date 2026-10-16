@@ -11,47 +11,47 @@
 
 \markup
 {
-	\column
-	{
-		\line { \main-part { "Closing" } }
+    \column
+    {
+        \line { \main-part { "Closing" } }
 
-		\score
-		{
-			\layoutSetup
-			\sectionCodaA
-		}
-		\line
-		{
-			\score
-			{
-				\layoutSetup
-				\sectionCodaB
-			}
-			\score
-			{
-				\layoutNoIndent
-				\sectionCodaC
-			}
-		}
+        \score
+        {
+            \layoutSetup
+            \sectionCodaA
+        }
+        \line
+        {
+            \score
+            {
+                \layoutSetup
+                \sectionCodaB
+            }
+            \score
+            {
+                \layoutNoIndent
+                \sectionCodaC
+            }
+        }
 
-		\line
-		{
-			\score
-			{
-				\layoutSetup
-				\sectionCodaD
-			}
-			\score
-			{
-				\layoutEnd
-				\sectionCodaE
-			}
-		}
+        \line
+        {
+            \score
+            {
+                \layoutSetup
+                \sectionCodaD
+            }
+            \score
+            {
+                \layoutEnd
+                \sectionCodaE
+            }
+        }
 
-		\score
-		{
-			\layoutSetup
-			\sectionCodaRecording
-		}
-	}
+        \score
+        {
+            \layoutSetup
+            \sectionCodaRecording
+        }
+    }
 }

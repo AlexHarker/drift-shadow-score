@@ -7,38 +7,38 @@ ekmelicFont = "Ekmelos"
 \include "ekmel-48ah.ily"
 \ekmelicStyle sag
 \ekmelicUserStyle eimm #'(
-	(1/8 #xE272)
-	(-1/8 #xE273)
- 	(1/4 #xE282)
-	(-1/4 #xE284)
-	(3/8 #xE299)
-	(-3/8 #xE291)
-	(1/2 #xE262)
-	(-1/2 #xE260)
-	(5/8 #xE274)
-	(-5/8 #xE2C1)
+    (1/8 #xE272)
+    (-1/8 #xE273)
+     (1/4 #xE282)
+    (-1/4 #xE284)
+    (3/8 #xE299)
+    (-3/8 #xE291)
+    (1/2 #xE262)
+    (-1/2 #xE260)
+    (5/8 #xE274)
+    (-5/8 #xE2C1)
 )
 
 #(define (multiphonic-number name)
-	(if multi_display
-		#{
-			_\markup
-			\override #'(font-name . "Arial Bold")
-			\tiny \center-align { \column { \line { \lower #4 #name } \vspace #0.5 } }
-		#}
-		#{ _\markup{} #}))
+    (if multi_display
+        #{
+            _\markup
+            \override #'(font-name . "Arial Bold")
+            \tiny \center-align { \column { \line { \lower #4 #name } \vspace #0.5 } }
+        #}
+        #{ _\markup{} #}))
 
 % basic multiphonic definition to reduce formatting and characters - takes a chord, fingering list, pressure, reed position and name
 
 multiphonic =
 #(define-music-function
-	(notes fingering pressure reed name)
-	(ly:music? list? number? number? string?)
+    (notes fingering pressure reed name)
+    (ly:music? list? number? number? string?)
 
-	#{
-		#notes ^\markup \fingering-plus #fingering #pressure #reed
-		#(multiphonic-number name)
-	#})
+    #{
+        #notes ^\markup \fingering-plus #fingering #pressure #reed
+        #(multiphonic-number name)
+    #})
 
 % include list of multiphonics
 
