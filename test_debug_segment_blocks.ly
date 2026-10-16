@@ -9,25 +9,25 @@
 
 % BLOCKS
 
-\removeWithTag #'debug 
+\removeWithTag #'debug
 \new Score { \componentOriginMain }
 
-\removeWithTag #'debug 
+\removeWithTag #'debug
 \new Score { \componentDisplace }
 
-\removeWithTag #'debug 
+\removeWithTag #'debug
 \new Score { \componentGround }
 
-\removeWithTag #'debug 
+\removeWithTag #'debug
 \new Score { \componentPush }
 
 \pageBreak
 
-\removeWithTag #'debug 
+\removeWithTag #'debug
 \new Score { \sectionClusterOne }
 
-\removeWithTag #'debug 
+\removeWithTag #'debug
 \new Score { \sectionClusterTwo }
 
-\removeWithTag #'debug 
+\removeWithTag #'debug
 \new Score { \sectionDivision }

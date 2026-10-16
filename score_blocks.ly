@@ -45,7 +45,7 @@ componentUnfoldingGlisses =
 	\option
 	\parenthesize bes''4 \glissando \circle-note beh''4 \glissando b''4
 	\option
-	fih'''4  \glissando \circle-note fis'''4 \glissando g'''4
+	fih'''4 \glissando \circle-note fis'''4 \glissando g'''4
 	\r-bracket
 }
 
@@ -90,7 +90,7 @@ componentOriginGlisses =
 	\option
 	\parenthesize bes''4 \glissando \circle-note beh''4 \glissando b''4
 	\option
-	\parenthesize f'''4 \glissando fih'''4  \glissando \circle-note fis'''4 \glissando g'''4
+	\parenthesize f'''4 \glissando fih'''4 \glissando \circle-note fis'''4 \glissando g'''4
 	\r-bracket
 }
 
@@ -166,7 +166,7 @@ componentPush =
 	\MulOnFoFo
 	\option
 	\MulOnFoFv
-	\or-sign-markup \markup { \trill-gliss \trillSign rapid   ##f }
+	\or-sign-markup \markup { \trill-gliss \trillSign rapid ##f }
 	\MulOnFoSx
 	\r-bracket
 	\tie-custom { g''' 4 } #4.5 #-7 #0.5 ##t
@@ -268,7 +268,7 @@ sectionClusterOne =
 	% DOESN'T WORK ON INSTRUMENT!
 	%{
 	-markup
-	\markup { \override #'(offset . 1.9) \trill-gliss \trillSign 		\override #'(baseline-skip . 2.2) \center-column { \line { occasional } \line { rocking } }  ##t }
+	\markup { \override #'(offset . 1.9) \trill-gliss \trillSign 		\override #'(baseline-skip . 2.2) \center-column { \line { occasional } \line { rocking } } ##t }
 	%}
 
 	s8
@@ -437,21 +437,21 @@ componentCentreExtendA =
 	\tie-custom { \smallNote cisil''4 } #2.2 #0 #-0.3 ##t
 		^\markup \pressure-diagram #0
 	\MulOnOnTh
-s16
+	s16
 	\tie-custom { \smallNote geh'''4 } #2.2 #-4.2 #0.4 ##t
 		^\markup \pressure-diagram #2
 	\option
 	\tie-custom { \smallNote d''4 } #2.2 #0 #-0.3 ##t
 		^\markup \pressure-diagram #0
 	\MulOnOnFo
-s16
+	s16
 	\tie-custom { \smallNote gel'''4 } #2.2 #-4.2 #0 ##t
 		^\markup \pressure-diagram #2
 	\option
 	\tie-custom { \smallNote dil''4 } #2.2 #0 #-0.3 ##t
 		^\markup \pressure-diagram #2
 	\MulTwZoZo
-s16
+	s16
 	\tie-custom { \smallNote gih'''4 } #2.2 #-4.2 #0 ##t
 		^\markup \pressure-diagram #4
 	\r-bracket
@@ -630,7 +630,7 @@ componentLoopsGround =
 
 	\l-bracket
 	\MulEiA
-	\tie-custom { \smallNote dih'4 }  #3.2 #-5.2 #0 ##f
+	\tie-custom { \smallNote dih'4 } #3.2 #-5.2 #0 ##f
 		^\markup \pressure-diagram #1
 	\r-bracket
 }

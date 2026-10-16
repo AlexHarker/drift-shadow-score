@@ -28,11 +28,11 @@ exampleSlowMeandering =
 			^\markup
 			{
 				\override #'(filled . #f) \path #gliss-thick
-				 #'((moveto 0 0)
-					(lineto 3 2)
-					(lineto 7 -2)
-					(lineto 10 1)
-					(lineto 12 -1))
+				#'((moveto 0 0)
+				   (lineto 3 2)
+				   (lineto 7 -2)
+				   (lineto 10 1)
+				   (lineto 12 -1))
 			}
 		s4
 
@@ -44,11 +44,11 @@ exampleSlowMeandering =
 			^\markup
 			{
 				\override #'(filled . #f) \path #gliss-thick
-				 #'((moveto 0 0)
-					(curveto 1.25 2 2.5 2 3.5 0)
-					(curveto 4.75 -2 6 -2 7 0)
-					(curveto 7.5 0.5 8 1.5 8.5 0)
-					(curveto 10 0 10.5 4 12.5 -0.25))
+				#'((moveto 0 0)
+				   (curveto 1.25 2 2.5 2 3.5 0)
+				   (curveto 4.75 -2 6 -2 7 0)
+				   (curveto 7.5 0.5 8 1.5 8.5 0)
+				   (curveto 10 0 10.5 4 12.5 -0.25))
 			}
 		s4
 
@@ -68,11 +68,11 @@ exampleOscillations =
 			^\markup
 			{
 				\override #'(filled . #f) \path #gliss-thick
-				 #'((moveto 0 0)
-					(curveto 1 1.5 2 1.5 3 0)
-					(curveto 4 -1.5 5 -1.5 6 0)
-					(curveto 7 1.5 8 1.5 9 0)
-					(curveto 10 -1.5 11 -1.5 12 0))
+				#'((moveto 0 0)
+				   (curveto 1 1.5 2 1.5 3 0)
+				   (curveto 4 -1.5 5 -1.5 6 0)
+				   (curveto 7 1.5 8 1.5 9 0)
+				   (curveto 10 -1.5 11 -1.5 12 0))
 			}
 		s4
 
@@ -85,10 +85,10 @@ exampleOscillations =
 			{
 				\override #'(filled . #f) \path #gliss-thick
 				#'((moveto 0 0)
-					(curveto 2 0.5 3 1.5 4.5 0)
-					(curveto 5 -1.5 5.5 -1.5 6 0)
-					(curveto 8 0.5 9 2 10.5 0)
-					(curveto 11 -1.5 11.5 -1.5 12 0))
+				   (curveto 2 0.5 3 1.5 4.5 0)
+				   (curveto 5 -1.5 5.5 -1.5 6 0)
+				   (curveto 8 0.5 9 2 10.5 0)
+				   (curveto 11 -1.5 11.5 -1.5 12 0))
 			}
 		s4
 
@@ -100,13 +100,13 @@ exampleOscillations =
 			^\markup
 			{
 				\override #'(filled . #f) \path #gliss-thick
-				 #'((moveto 0 0)
-					(curveto 2.6 -0.2 2.8 5 3 0)
-					(curveto 4 -1.5 5 -1.5 6 0)
-					(curveto 8.6 -0.2 8.8 5 9 0)
-					(curveto 10 -1.5 11 -1.5 12 0)
-					(curveto 14.6 0.2 14.8 -5 15 0)
-					(curveto 16.2 4 16.3 -0.1 20 0))
+				#'((moveto 0 0)
+				   (curveto 2.6 -0.2 2.8 5 3 0)
+				   (curveto 4 -1.5 5 -1.5 6 0)
+				   (curveto 8.6 -0.2 8.8 5 9 0)
+				   (curveto 10 -1.5 11 -1.5 12 0)
+				   (curveto 14.6 0.2 14.8 -5 15 0)
+				   (curveto 16.2 4 16.3 -0.1 20 0))
 			}
 		s4
 
@@ -126,8 +126,8 @@ exampleScoops =
 			^\markup
 			{
 				\override #'(filled . #f) \path #gliss-thick
-				 #'((moveto 0 0)
-					(curveto 1 1 2 1 3 0))
+				#'((moveto 0 0)
+				   (curveto 1 1 2 1 3 0))
 			}
 		s4
 
@@ -137,8 +137,8 @@ exampleScoops =
 			^\markup
 			{
 				\override #'(filled . #f) \path #gliss-thick
-				 #'((moveto 0 0)
-					(curveto 1 -1 2 -1 4 0.5))
+				#'((moveto 0 0)
+				   (curveto 1 -1 2 -1 4 0.5))
 			}
 		s4
 		s16
@@ -152,8 +152,8 @@ exampleScoops =
 			{
 				\override #'(filled . #f) \path #gliss-thick
 				#'((moveto 0 0)
-					(curveto 0.5 1 1.5 1.5 3 0.5)
-					(curveto 4 2 5.5 2.5 6 1))
+				   (curveto 0.5 1 1.5 1.5 3 0.5)
+				   (curveto 4 2 5.5 2.5 6 1))
 			}
 		s4
 
@@ -164,8 +164,8 @@ exampleScoops =
 			{
 				\override #'(filled . #f) \path #gliss-thick
 				#'((moveto 0 0)
-					(curveto 1.33 -4 2.66 4 4 0.5)
-					(curveto 4.5 0 5 0 5.5 0))
+				   (curveto 1.33 -4 2.66 4 4 0.5)
+				   (curveto 4.5 0 5 0 5.5 0))
 			}
 		s4
 
@@ -177,13 +177,13 @@ exampleScoops =
 			^\markup
 			{
 				\override #'(filled . #f) \path #gliss-thick
-				 #'((moveto 0 0)
-					(curveto 0.5 -0.6 1 0.9 2 0)
-					(curveto 2.5 -1.4 3 2.4 4 0)
-					(curveto 4.5 -3 5.25 8 5.3 0)
-					(curveto 5.75 -9.5 6 3.5 6.25 0)
-					(curveto 6.75 -2.6 7.25 1.6 7.75 0)
-					(curveto 8.75 -0.9 9.75 0.4 10.75 0))
+				#'((moveto 0 0)
+				   (curveto 0.5 -0.6 1 0.9 2 0)
+				   (curveto 2.5 -1.4 3 2.4 4 0)
+				   (curveto 4.5 -3 5.25 8 5.3 0)
+				   (curveto 5.75 -9.5 6 3.5 6.25 0)
+				   (curveto 6.75 -2.6 7.25 1.6 7.75 0)
+				   (curveto 8.75 -0.9 9.75 0.4 10.75 0))
 			}
 		s4
 
@@ -193,11 +193,11 @@ exampleScoops =
 			^\markup
 			{
 				\override #'(filled . #f) \path #gliss-thick
-				 #'((moveto 0 0)
-					(curveto 2 1.5 4 1.5 5 0)
-					(curveto 5.5 -2 6 2 6.5 0)
-					(curveto 7 -1.6 8.5 2.4 9 0)
-					(curveto 9.5 -1.5 10 1.6 10.5 0))
+				#'((moveto 0 0)
+				   (curveto 2 1.5 4 1.5 5 0)
+				   (curveto 5.5 -2 6 2 6.5 0)
+				   (curveto 7 -1.6 8.5 2.4 9 0)
+				   (curveto 9.5 -1.5 10 1.6 10.5 0))
 			}
 		s4
 
@@ -222,7 +222,7 @@ exampleUnfoldingStatic =
 		\option
 
 		g'1\-
-	    \teeny c''16
+		\teeny c''16
 		g'2\- s8
 		\teeny d'16
 		g'2.\-
@@ -261,12 +261,13 @@ exampleUnfoldingUnderblow =
 			^\markup \pressure-diagram #3
 			^\markup
 			{
-				\override #'(filled . #f) \path #0.2				 #'((moveto 0 0)
-					(lineto 10 0)
-					(curveto 13 -1.5 15 -1.5 18 0)
-					(lineto 22 0)
-					(curveto 26 -2 29 -3 31 0)
-					(lineto 32 0))
+				\override #'(filled . #f) \path #0.2
+				#'((moveto 0 0)
+				   (lineto 10 0)
+				   (curveto 13 -1.5 15 -1.5 18 0)
+				   (lineto 22 0)
+				   (curveto 26 -2 29 -3 31 0)
+				   (lineto 32 0))
 			}
 		s1
 			^\markup \pressure-diagram #2
@@ -278,14 +279,14 @@ exampleUnfoldingUnderblow =
 			^\markup
 			{
 				\override #'(filled . #f) \path #gliss-thick
-				 #'((moveto 0 0)
-					(lineto 8 0)
-					(curveto 11 -1.5 13 -1.5 15 0)
-					(lineto 17 0)
-					(curveto 19 -2 22 -2 24 0)
-					(lineto 32 0)
-					(curveto 35 -4.5 37 -2.5 43 0)
-					(lineto 47 0))
+				#'((moveto 0 0)
+				   (lineto 8 0)
+				   (curveto 11 -1.5 13 -1.5 15 0)
+				   (lineto 17 0)
+				   (curveto 19 -2 22 -2 24 0)
+				   (lineto 32 0)
+				   (curveto 35 -4.5 37 -2.5 43 0)
+				   (lineto 47 0))
 			}
 			^\markup \raise #4 \italic sim.
 		s1 s2 s1 \hide r8 \breathMark
@@ -301,7 +302,7 @@ dashedDurationBreak =
 dashedDurationArticulate =
 {
 	\dashedDurationBreak
-    \once \override DurationLine.bound-details.left.padding = -0.6
+	\once \override DurationLine.bound-details.left.padding = -0.6
 }
 
 
@@ -314,7 +315,7 @@ dashedDurationStart =
 dashedDuration =
 {
 	\dashedDurationBreak
-    \once \override DurationLine.bound-details.left.padding = -1.6
+	\once \override DurationLine.bound-details.left.padding = -1.6
 	\once \override DurationLine.bound-details.right.padding = -1
 }
 
@@ -352,9 +353,9 @@ exampleOriginFocusRearticulate =
 				\hide r4.
 
 				f'''2 \-
-				\dashedDuration  f'''2 \-
+				\dashedDuration f'''2 \-
 				\once \hide NoteHead f'''2 \-
-				f'''4 \- f'''4 \- 
+				f'''4 \- f'''4 \-
 				\once \override DurationLine.bound-details.right.padding = 0.9
 				f'''4 \- s2
 				\hide r4
@@ -427,19 +428,19 @@ exampleGlissesScoops =
 
 beamS =
 {
-    \set stemLeftBeamCount = #0
+	\set stemLeftBeamCount = #0
 	\set stemRightBeamCount = #1
 }
 
 beam =
 {
-    \set stemLeftBeamCount = #1
+	\set stemLeftBeamCount = #1
 	\set stemRightBeamCount = #1
 }
 
 beamE =
 {
-    \set stemLeftBeamCount = #1
+	\set stemLeftBeamCount = #1
 	\set stemRightBeamCount = #0
 }
 
@@ -479,8 +480,8 @@ exampleMicrotones =
 			\teeny \relative
 			{
 				\beamS b'16 [ \beam c \beam a b8 d
-				d8.  b  a \beam d16 \beam a \beam b \beam c
-				b8.  d  c8 s8 b8 a  \beam c16 \beamE d ]
+				d8. b a \beam d16 \beam a \beam b \beam c
+				b8. d c8 s8 b8 a \beam c16 \beamE d ]
 			}
 
 			s4
@@ -530,25 +531,25 @@ exampleUnfoldingFormA =
 			\repeat volta 2
 			{
 				b'1.\-
-					^\markup \italic {  stable/liminal }
-					^\markup \italic {  \time-bracket-range 4 12 #56 }
+					^\markup \italic { stable/liminal }
+					^\markup \italic { \time-bracket-range 4 12 #56 }
 				s2
 				\hide r4
-					^\markup \translate #'(3.2 . 0 ) \italic {  dissolve/unstable }
+					^\markup \translate #'(3.2 . 0 ) \italic { dissolve/unstable }
 				\override TextScript.extra-offset = #'(0 . -5.6)
 				\override TextScript.Y-extent = #'(-1 . -0.9)
 				\hide r1.
 					^\markup
 					{
 						\override #'(filled . #f) \path #0.4
-						 #'((moveto 0 0)
-							(curveto 1 0.5 2 0.5 3 0)
-							(curveto 4 -0.5 5 -0.5 6 0)
-							(curveto 7 0.5 8 0.5 9 0)
-							(curveto 10 -0.5 11 -0.5 12 0)
-							(curveto 13 -0.5 14 -0.5 15 0)
-							(curveto 16 0.5 17 0.5 18 0)
-							(curveto 19 -0.5 20 -0.5 21 0))
+						#'((moveto 0 0)
+						   (curveto 1 0.5 2 0.5 3 0)
+						   (curveto 4 -0.5 5 -0.5 6 0)
+						   (curveto 7 0.5 8 0.5 9 0)
+						   (curveto 10 -0.5 11 -0.5 12 0)
+						   (curveto 13 -0.5 14 -0.5 15 0)
+						   (curveto 16 0.5 17 0.5 18 0)
+						   (curveto 19 -0.5 20 -0.5 21 0))
 					}
 				\revert TextScript.extra-offset
 				\revert TextScript.Y-extent
@@ -602,13 +603,13 @@ exampleUnfoldingFormB =
 			^\markup
 			{
 				\override #'(filled . #f) \path #gliss-thick
-				 #'((moveto 0 0)
-					(curveto 2.6 -0.2 2.8 5 3 0)
-					(curveto 4 -1.5 5 -1.5 6 0)
-					(curveto 8.6 -0.2 8.8 5 9 0)
-					(curveto 10 -1.5 11 -1.5 12 0)
-					(curveto 14.6 0.2 14.8 -5 15 0)
-					(curveto 16.2 4 16.3 -0.1 20 0))
+				#'((moveto 0 0)
+				   (curveto 2.6 -0.2 2.8 5 3 0)
+				   (curveto 4 -1.5 5 -1.5 6 0)
+				   (curveto 8.6 -0.2 8.8 5 9 0)
+				   (curveto 10 -1.5 11 -1.5 12 0)
+				   (curveto 14.6 0.2 14.8 -5 15 0)
+				   (curveto 16.2 4 16.3 -0.1 20 0))
 			}
 			\hide \glissando \hide f'4
 		s4
@@ -623,12 +624,12 @@ exampleUnfoldingFormB =
 			^\markup
 			{
 				\override #'(filled . #f) \path #gliss-thick
-				 #'((moveto 0 0)
-					(lineto 10 0)
-					(curveto 13 -1.5 15 -1.5 18 0)
-					(lineto 22 0)
-					(curveto 26 -2 29 -3 31 0)
-					(lineto 32 0))
+				#'((moveto 0 0)
+				   (lineto 10 0)
+				   (curveto 13 -1.5 15 -1.5 18 0)
+				   (lineto 22 0)
+				   (curveto 26 -2 29 -3 31 0)
+				   (lineto 32 0))
 			}
 		s1
 			^\markup \pressure-diagram #2
@@ -654,7 +655,7 @@ exampleOriginSwells =
 		{
 			\override TextScript.Y-offset = #2
 			b'1\-
-				^\markup {  \time-bracket-range 1 6 #16 }
+				^\markup { \time-bracket-range 1 6 #16 }
 			s4 \hide r8
 			b'1\- s4 \hide r8
 			b'1\-
@@ -672,7 +673,7 @@ exampleOriginSwells =
 			{ s16 s2 \< s8 \> s2 s16 \! s8 }
 			{ s16 s2 \< s8 \> s2 s16 \! s8 }
 			{ s16 s2 \< s8 s8 \> s8 s2 s16 \! s8 }
-			{ s16 s2.\< s8 s8 \>  s2. s8 s16 \! s8 }
+			{ s16 s2.\< s8 s8 \> s2. s8 s16 \! s8 }
 		}
 	>>
 }
@@ -772,7 +773,7 @@ exampleOriginMiniLoops =
 			\repeat volta 2
 			{
 				g'2.\-
-					^\markup \raise #4 {  \time-bracket-range 1 2 #60 }
+					^\markup \raise #4 { \time-bracket-range 1 2 #60 }
 				\teeny d''16
 				\teeny c'16
 				g'4\- s8
@@ -787,12 +788,12 @@ exampleOriginMiniLoops =
 				^\markup
 				{
 					\override #'(filled . #f) \path #gliss-thick
-					 #'((moveto 0 0)
-						(lineto 8 0)
-						(curveto 11 -1.5 13 -1.5 15 0)
-						(lineto 17 0)
-						(curveto 19 -2 22 -2 24 0)
-						(lineto 26 0))
+					#'((moveto 0 0)
+					   (lineto 8 0)
+					   (curveto 11 -1.5 13 -1.5 15 0)
+					   (lineto 17 0)
+					   (curveto 19 -2 22 -2 24 0)
+					   (lineto 26 0))
 				}
 				s1
 
@@ -831,22 +832,22 @@ exampleGroundDissolve =
 
 	\new Staff \with { instrumentName = \exampleHeading }
 	{
-		<< { 
-		
+		<< {
+
 			\override TextScript.extra-offset = #'(1.7 . -3.1)
 			f'1. \>
 				^\markup
 				{
 					\override #'(filled . #f) \path #gliss-thick
-					 #'((moveto 0 0)
-						(curveto 1.25 1 3.5 1 5.5 0)
-						(curveto 6.75 -1 8 -1 10 0)
-						(curveto 11.1 0.25 12 0.75 12.5 0)
-						(curveto 14 0 15.5 2 21.5 -0.25))
+					#'((moveto 0 0)
+					   (curveto 1.25 1 3.5 1 5.5 0)
+					   (curveto 6.75 -1 8 -1 10 0)
+					   (curveto 11.1 0.25 12 0.75 12.5 0)
+					   (curveto 14 0 15.5 2 21.5 -0.25))
 				}
-	
-			%f'1. \glissando 
-			\hide b'4	
+
+			%f'1. \glissando
+			\hide b'4
 		}
 
 		\new Voice
@@ -862,14 +863,14 @@ exampleGroundDissolve =
 				{
 					\override #'(filled . #f) \path #0.2
 					#'((moveto 0 0)
-						(curveto 2 -0.5 4 -0.5 5 0)
-						(curveto 6  0.5 7.6  0.5 8.1 0)
-						(curveto 8.7 -0.8 9.6 -0.2 10 0)
-					   	(curveto 11.1 -0.6 12.0 -0.1 14 0)
-					  (moveto 1 -1.4)
-						(curveto 3 -0.3 4.5 1.5 4.7 0.2)
-						(curveto 5.4 -0.3 6.7 -0.5 7.9 -0.2)
-						(curveto 10.2 0.2 12.5 0.6 13.4 0.3))
+					   (curveto 2 -0.5 4 -0.5 5 0)
+					   (curveto 6 0.5 7.6 0.5 8.1 0)
+					   (curveto 8.7 -0.8 9.6 -0.2 10 0)
+					   (curveto 11.1 -0.6 12.0 -0.1 14 0)
+					   (moveto 1 -1.4)
+					   (curveto 3 -0.3 4.5 1.5 4.7 0.2)
+					   (curveto 5.4 -0.3 6.7 -0.5 7.9 -0.2)
+					   (curveto 10.2 0.2 12.5 0.6 13.4 0.3))
 				}
 		}
 		\new Voice
@@ -1047,7 +1048,7 @@ exampleDisplaceSlow =
 		\proportionalOptions
 		\context
 		{
-    		\Score
+			\Score
 			\override NoteHead.transparent = ##t
 		}
 	}
@@ -1062,7 +1063,7 @@ exampleDisplaceOscillations =
 		\proportionalOptions
 		\context
 		{
-    		\Score
+			\Score
 			\override NoteHead.transparent = ##t
 		}
 	}
@@ -1077,7 +1078,7 @@ exampleDisplaceScoops =
 		\proportionalOptions
 		\context
 		{
-    		\Score
+			\Score
 			\override NoteHead.transparent = ##t
 		}
 	}
@@ -1105,10 +1106,10 @@ exampleArrivalSingles =
 	\layout
 	{
 		\proportionalStave
-	
+
 		\context
 		{
-    		\Score
+			\Score
 			\override SpacingSpanner.shortest-duration-space = #1.8
 		}
 	}
@@ -1124,12 +1125,12 @@ exampleArrivalSingles =
 			\breakingTrill
 			\override #'(filled . #f) \path #0.2
 				#'((moveto 0 0)
-					(curveto 2 0.3 3.5 -0.5 4 0)
-					(curveto 4.5 0.7 5 -1.4 5.5 0)
-					(curveto 6 2.1 6.75 -4.0 7.5 1.7)
-					(curveto 8.25 -4.0 9 2.1 9.5 0)
-					(curveto 10 -1.4 10.5 0.7 11 0)
-					(curveto 12.5 -0.5 14 0.3 16 0))
+				   (curveto 2 0.3 3.5 -0.5 4 0)
+				   (curveto 4.5 0.7 5 -1.4 5.5 0)
+				   (curveto 6 2.1 6.75 -4.0 7.5 1.7)
+				   (curveto 8.25 -4.0 9 2.1 9.5 0)
+				   (curveto 10 -1.4 10.5 0.7 11 0)
+				   (curveto 12.5 -0.5 14 0.3 16 0))
 		}
 		\hide r8. \breathMark
 		e''2 \- ^\markup { \breakingTrill \vcenter etc. } \spacerRest
@@ -1237,7 +1238,7 @@ exampleArrivalClouds =
 
 		\context
 		{
-    		\Score
+			\Score
 			\override SpacingSpanner.shortest-duration-space = #1.3
 		}
 	}
@@ -1254,33 +1255,33 @@ exampleArrivalClouds =
 				{
 					\override #'(filled . #f) \path #0.2
 					#'((moveto 0 0)
-						(curveto 4 0.9 8 -0.6 12 1.6)
-					  (moveto 0.5 -1.0)
-						(curveto 5 -5.0 8 -2.2 13 -2.9)
-					  (moveto 3 -0.4)
-					  	(curveto 9 -3.4 10 -4.6 17 -3.3)
-					  (moveto 6.3 1.4)
-					  	(curveto 9 -4.4 11.4 3.6 18 2.3)
-					  (moveto 12.3 -0.8)
-					  	(curveto 19.4 -2.4 20.4 2.1 27 -0.3)
-					  (moveto 14.3 -1.8)
-						(curveto 16.4 1.4 18.4 -1.4 24 -3.3)
-					  (moveto 18.1 0.8)
-						(curveto 23.1 3.4 28.4 -5.4 33.1 0.3)
-					  (moveto 22.1 -2)
-						(curveto 28.5 -3.4 29.4 -0.6 34.9 -3.4)
-						(curveto 38.1 -4.6 40.4 -0.6 44.3 -3.4)
-				      (moveto 20 -4)
-						(curveto 21 -2.5 24 -2.5 28.9 -4)
-						(curveto 32 -5.5 33 -5.5 35.4 -4)
-						(curveto 37 -2.5 37.5 -2.5 38 -4)
-					   	(curveto 40 -5.5 41.3 -5.5 45 -4)
-					  (moveto 28 -1.4)
-						(curveto 32 -0.3 42 1.5 44.9 0.2)
-						(curveto 48 -0.3 51 -0.5 54.4 -0.2)
-						(curveto 56 0.2 59.5 0.6 62 0.3)
-					  (moveto 45 -2.7)
-						(curveto 48 -1.2 58 -2.9 65 -1.9))
+					   (curveto 4 0.9 8 -0.6 12 1.6)
+					   (moveto 0.5 -1.0)
+					   (curveto 5 -5.0 8 -2.2 13 -2.9)
+					   (moveto 3 -0.4)
+					   (curveto 9 -3.4 10 -4.6 17 -3.3)
+					   (moveto 6.3 1.4)
+					   (curveto 9 -4.4 11.4 3.6 18 2.3)
+					   (moveto 12.3 -0.8)
+					   (curveto 19.4 -2.4 20.4 2.1 27 -0.3)
+					   (moveto 14.3 -1.8)
+					   (curveto 16.4 1.4 18.4 -1.4 24 -3.3)
+					   (moveto 18.1 0.8)
+					   (curveto 23.1 3.4 28.4 -5.4 33.1 0.3)
+					   (moveto 22.1 -2)
+					   (curveto 28.5 -3.4 29.4 -0.6 34.9 -3.4)
+					   (curveto 38.1 -4.6 40.4 -0.6 44.3 -3.4)
+					   (moveto 20 -4)
+					   (curveto 21 -2.5 24 -2.5 28.9 -4)
+					   (curveto 32 -5.5 33 -5.5 35.4 -4)
+					   (curveto 37 -2.5 37.5 -2.5 38 -4)
+					   (curveto 40 -5.5 41.3 -5.5 45 -4)
+					   (moveto 28 -1.4)
+					   (curveto 32 -0.3 42 1.5 44.9 0.2)
+					   (curveto 48 -0.3 51 -0.5 54.4 -0.2)
+					   (curveto 56 0.2 59.5 0.6 62 0.3)
+					   (moveto 45 -2.7)
+					   (curveto 48 -1.2 58 -2.9 65 -1.9))
 
 				}
 			}
@@ -1342,7 +1343,7 @@ exampleArrivalExtendB =
 			\modalTranspose b'' b' { c d e f g a b }
 			{
 				\extendDuration g''1. \- s4
-					^\markup {  \time-bracket-range 1 4 #27.4 }
+					^\markup { \time-bracket-range 1 4 #27.4 }
 				\extendDuration \hide NoteHead g'4 \-
 				\extendDuration b''2 \-
 				\extendDuration d'''8. \-
@@ -1422,15 +1423,15 @@ exampleClusterOneC =
 		{
 			\shiftOff
 
-		   	\override NoteHead.no-ledgers = ##t
+		 	\override NoteHead.no-ledgers = ##t
 			\override TextScript.extra-offset = #'(0 . -0.8)
 			a'''1 \- \hide r2
 				^\markup
 				{
 					\override #'(filled . #f) \path #gliss-thick
-					 #'((moveto 0 0)
-						(curveto 2 -0.5 3 0.8 4.5 -0.5)
-						(curveto 5.5 -1.2 6 2 8.5 -1))
+					#'((moveto 0 0)
+					   (curveto 2 -0.5 3 0.8 4.5 -0.5)
+					   (curveto 5.5 -1.2 6 2 8.5 -1))
 				}
 			\revert TextScript.extra-offset
 
@@ -1462,12 +1463,12 @@ exampleClusterOneC =
 				{
 					\raise #3
 					\override #'(filled . #f) \path #gliss-thick
-					 #'((moveto 2 0)
-						(lineto 4 0)
-						(curveto 5.1 1.5 8.8 1.5 9.2 0)
-						(curveto 9.3 -1.5 9.4 -2 10.5 -1.6)
-						(curveto 11 -1.6 12.1 2.4 13.5 0)
-						(curveto 14.5 -1.5 15.8 1.6 16.8 0))
+					#'((moveto 2 0)
+					   (lineto 4 0)
+					   (curveto 5.1 1.5 8.8 1.5 9.2 0)
+					   (curveto 9.3 -1.5 9.4 -2 10.5 -1.6)
+					   (curveto 11 -1.6 12.1 2.4 13.5 0)
+					   (curveto 14.5 -1.5 15.8 1.6 16.8 0))
 				}
 			e'''1
 				^\markup \override #'(voffset . 4) \teeth-indicator
@@ -1475,18 +1476,18 @@ exampleClusterOneC =
 				{
 					\raise #2.1
 					\override #'(filled . #f) \path #gliss-thick
-					 #'((moveto 2 0)
-						(curveto 3.4 0 4.2 1.5 5 1.5)
-						(lineto 6 1.5)
-						(curveto 6.8 1.5 7.8 0.58 8.2 0)
-						(curveto 9.5 -1.3 10.8 1.6 11.5 1.2))
+					#'((moveto 2 0)
+					   (curveto 3.4 0 4.2 1.5 5 1.5)
+					   (lineto 6 1.5)
+					   (curveto 6.8 1.5 7.8 0.58 8.2 0)
+					   (curveto 9.5 -1.3 10.8 1.6 11.5 1.2))
 				}
-		} 
+		}
 		\new Voice
 		{
 			s4 s8 \< s8 \> s8 s8 \< s8 \> s8 \< s8 \> s8 \! s4
 			s4 s8 \< s8 \> s8 \< s8 \> s8 s8 \!
-		} 
+		}
 		>>
 
 		\hide r8
@@ -1510,7 +1511,7 @@ exampleClusterTwoA =
 			\voiceOne
 			\override TextScript.extra-offset = #'(0 . 2)
 			d''1\-
-				^\markup {  \time-bracket-range 1 2 #18 } s4.
+				^\markup { \time-bracket-range 1 2 #18 } s4.
 			\hide r8
 			e''1\- s4
 			\hide r8.
@@ -1576,7 +1577,7 @@ exampleDivisionStatement =
 
 	\new Staff \with { instrumentName = \exampleHeading }
 	{
-		c'2\- ^\markup {  \time-bracket-range 4 12 #36.5 } \spacerRest
+		c'2\- ^\markup { \time-bracket-range 4 12 #36.5 } \spacerRest
 		e''2.\- s8 \spacerRest
 		b1\- s4 \hide r4
 	}
@@ -1595,14 +1596,14 @@ exampleDivisionDissolve =
 			f'1
 			^\markup
 			{
-  				\override #'(filled . #f) \path #gliss-thick
+				\override #'(filled . #f) \path #gliss-thick
 				#'((moveto 0 0)
-					(curveto 4 -0.1 3 1 5 1.6)
-					(curveto 5.8 1.0 6.5 -0.3 8 0.4)
-					(curveto 9 -0.3 9.5 0.4 10 1.1)
-					(curveto 11 -0.4 12 -0.7 13 0.6)
-					(curveto 14 -0.8 15 1.4 16 0.6)
-					(curveto 18.5 -0.1 19 0.5 20.3 1.2))
+				   (curveto 4 -0.1 3 1 5 1.6)
+				   (curveto 5.8 1.0 6.5 -0.3 8 0.4)
+				   (curveto 9 -0.3 9.5 0.4 10 1.1)
+				   (curveto 11 -0.4 12 -0.7 13 0.6)
+				   (curveto 14 -0.8 15 1.4 16 0.6)
+				   (curveto 18.5 -0.1 19 0.5 20.3 1.2))
 			}
 			s1
 			\revert TextScript.extra-offset
@@ -1622,14 +1623,14 @@ exampleDivisionDissolve =
 				{
 					\override #'(filled . #f) \path #0.2
 					#'((moveto 0 0)
-						(curveto 2 -0.8 4 -0.6 5 0)
-						(curveto 6  0.5 7.6  0.9 8.1 0)
-						(curveto 8.7 -0.8 9.6 -0.2 10 0)
-					   	(curveto 11.1 -0.6 12.0 -0.1 14 0)
-					  (moveto 1 -1.4)
-						(curveto 1 -0.3 4.5 1.5 4.7 0.2)
-						(curveto 5.4 -0.3 6.7 -0.5 7.9 -0.2)
-						(curveto 10.2 0.2 15.5 0.6 17.4 0.3))
+					   (curveto 2 -0.8 4 -0.6 5 0)
+					   (curveto 6 0.5 7.6 0.9 8.1 0)
+					   (curveto 8.7 -0.8 9.6 -0.2 10 0)
+					   (curveto 11.1 -0.6 12.0 -0.1 14 0)
+					   (moveto 1 -1.4)
+					   (curveto 1 -0.3 4.5 1.5 4.7 0.2)
+					   (curveto 5.4 -0.3 6.7 -0.5 7.9 -0.2)
+					   (curveto 10.2 0.2 15.5 0.6 17.4 0.3))
 				}
 		}
 		\new Voice
@@ -1652,7 +1653,7 @@ exampleDivisionB =
 		\override NoteHead.no-ledgers = ##t
 
 		\extendDuration <d' d'' f'' b'' e''' f'''>4 \-
-		\extendDurationMore \hide NoteHead  b''8. \-
+		\extendDurationMore \hide NoteHead b''8. \-
 		\extendDuration <d' d'' f'' b'' e''' f'''>4. \-
 		\hide r2
 		\once \override NoteHead.transparent = ##f
@@ -1662,7 +1663,7 @@ exampleDivisionB =
 		\extendDuration <c' d''' f''' a''' b'''>8 \-
 		\hide r2 s8
 		\extendDuration <d' d'' f'' b'' e''' f'''>8. \-
-		\extendDuration \hide NoteHead  b''4 \-
+		\extendDuration \hide NoteHead b''4 \-
 		\hide c''8
 			^\markup \noiseBurst
 		\extendDuration a'''4. \-
@@ -1682,8 +1683,8 @@ exampleDivisionC =
 
 	\new Staff \with { instrumentName = \exampleHeading }
 	{
-		a'2.\- ^\markup {  \time-bracket-range 2 6 #14.5 } s4 s8 \spacerRest \spacerRest
-		g''2\-  s2 s2 \spacerRest \spacerRest
+		a'2.\- ^\markup { \time-bracket-range 2 6 #14.5 } s4 s8 \spacerRest \spacerRest
+		g''2\- s2 s2 \spacerRest \spacerRest
 		d'2\- s2. \spacerRest
 	}
 }
@@ -1713,14 +1714,14 @@ exampleLoopsGroundDissolve =
 				{
 					\override #'(filled . #f) \path #0.2
 					#'((moveto 0 0)
-						(curveto 2 -0.5 3 -0.9 4 0)
-						(curveto 5.1  0.5 5.5  1.5 6.2 0)
-						(curveto 7.7 -0.8 8.6 -1.2 9.2 0)
-					   	(curveto 10.1 -0.6 11.0 -0.1 11.2 0)
-					  (moveto 1 -1.4)
-						(curveto 1 -0.3 1.5 1.5 2.7 0.2)
-						(curveto 3.4 -0.3 4.7 -0.5 5.9 -0.2)
-						(curveto 6.2 0.2 7.5 0.6 9.4 0.3))
+					   (curveto 2 -0.5 3 -0.9 4 0)
+					   (curveto 5.1 0.5 5.5 1.5 6.2 0)
+					   (curveto 7.7 -0.8 8.6 -1.2 9.2 0)
+					   (curveto 10.1 -0.6 11.0 -0.1 11.2 0)
+					   (moveto 1 -1.4)
+					   (curveto 1 -0.3 1.5 1.5 2.7 0.2)
+					   (curveto 3.4 -0.3 4.7 -0.5 5.9 -0.2)
+					   (curveto 6.2 0.2 7.5 0.6 9.4 0.3))
 				}
 		}
 		\new Voice
@@ -1746,9 +1747,9 @@ exampleLoopsGroundGliss =
 			f'1
 			^\markup
 			{
-  				\override #'(filled . #f) \path #gliss-thick
+				\override #'(filled . #f) \path #gliss-thick
 				#'((moveto 0 0)
-					(curveto 7 -0.2 13 1 23 2.7))
+				   (curveto 7 -0.2 13 1 23 2.7))
 			}
 			s1
 			\revert TextScript.extra-offset
@@ -1792,12 +1793,12 @@ exampleLoopsForm =
 				^\markup
 				{
 					\override #'(filled . #f) \path #gliss-thick
-					 #'((moveto 0 0)
-						(lineto 2 0)
-						(curveto 3 3 4 2 6 0)
-						(lineto 8 0)
-						(curveto 8.5 1.5 9.5 1.5 10 0)
-						(lineto 11 0))
+					#'((moveto 0 0)
+					   (lineto 2 0)
+					   (curveto 3 3 4 2 6 0)
+					   (lineto 8 0)
+					   (curveto 8.5 1.5 9.5 1.5 10 0)
+					   (lineto 11 0))
 				}
 			s8.
 				^\markup \raise #4 \pressure-diagram #3
@@ -1807,12 +1808,12 @@ exampleLoopsForm =
 				^\markup
 				{
 					\override #'(filled . #f) \path #gliss-thick
-					 #'((moveto 0 0)
-						(lineto 1 0)
-						(curveto 2 1.6 3.6 1.5 4.3 0.5)
-						(lineto 5 0.3)
-						(curveto 7.1 2 8.6 3 9 0)
-						(lineto 11 0))
+					#'((moveto 0 0)
+					   (lineto 1 0)
+					   (curveto 2 1.6 3.6 1.5 4.3 0.5)
+					   (lineto 5 0.3)
+					   (curveto 7.1 2 8.6 3 9 0)
+					   (lineto 11 0))
 			}
 		}
 	}
@@ -1861,7 +1862,7 @@ examplePressRearticulate =
 				\dashedDurationArticulate <c'' g'' b'''>8.\- s16
 				\dashedDurationStart <c'' g'' e'''>4 \- s16
 				\dashedDuration <c'' e''' b'''>8 \- s16
-				\hide r8 
+				\hide r8
 				\dashedDurationStart <c'' g'' b'''>8 \- s2.
 				\dashedDuration < g'' e''' b'''>4\-
 				\hide r16
@@ -1884,15 +1885,15 @@ examplePressDissolve =
 			^\markup
 			{
 				\override #'(filled . #f) \path #gliss-thick
-				 #'((moveto 0 0)
-					(curveto 1.25 1 2.5 1 3.5 0)
-					(curveto 4.75 -1 6 -1 7 0)
-					(curveto 7.5 0.25 8 0.75 8.5 0)
-					(curveto 10 0 10.5 2 12.5 -0.25))
+				#'((moveto 0 0)
+				   (curveto 1.25 1 2.5 1 3.5 0)
+				   (curveto 4.75 -1 6 -1 7 0)
+				   (curveto 7.5 0.25 8 0.75 8.5 0)
+				   (curveto 10 0 10.5 2 12.5 -0.25))
 			}
 		s8 s2..
 		\override TextScript.extra-offset = #'(1 . -2.5)
-		\hide a'4 
+		\hide a'4
 			^\markup \noiseBurst
 			^\markup \center-align \line { \italic { use tongue/spit }}
 		\override TextScript.extra-offset = #'(0.5 . -2.5)
@@ -1900,18 +1901,18 @@ examplePressDissolve =
 			^\markup
 			{
 				\override #'(filled . #f) \path #gliss-thick
-				 #'((moveto 0 0)
-					(curveto 3.25 1 4.5 -3 5.5 -0.7))
+				#'((moveto 0 0)
+				   (curveto 3.25 1 4.5 -3 5.5 -0.7))
 			}
-		\hide e'4 
+		\hide e'4
 			^\markup \noiseBurst
 		\override TextScript.extra-offset = #'(0 . -2.2)
-		\hide f'2 
+		\hide f'2
 			^\markup
 			{
 				\override #'(filled . #f) \path #gliss-thick
-				 #'((moveto 0 0)
-					(curveto 3.25 -0.4 4.5 2 5.5 1.4))
+				#'((moveto 0 0)
+				   (curveto 3.25 -0.4 4.5 2 5.5 1.4))
 			}
 		\override TextScript.extra-offset = #'(0 . -1.2)
 		\hide e'4 \! ^\markup \noiseBurst
@@ -1996,7 +1997,7 @@ exampleExtendWavering =
 			\modalTranspose b'' b' { c d e f g a b }
 			{
 				\extendDuration a''1. \- s4
-					^\markup \raise #5 {  \time-bracket-range 2 6 #24.5 }
+					^\markup \raise #5 { \time-bracket-range 2 6 #24.5 }
 				\extendDuration \hide NoteHead f'''4 \-
 				\hide r2
 				\extendDuration f'''8. \-
@@ -2058,16 +2059,16 @@ exampleTransitionCresc =
 				{
 					\override #'(filled . #f) \path #gliss-thick
 				 	#'((moveto 0 0)
-						(curveto 1  0.5 2  0.5 3 0)
-						(curveto 5 -0.5 7 -0.5 8 0)
-						(curveto 8.5 0.5 9  0.5 9.5 0)
-						(curveto 10 -0.5 10.8 -0.5 11.2 0)
-						(curveto 11.5 0.5 12 0.5 12.5 0)
-						(curveto 13 -0.5 13.5 -0.5 13.8 0)
-						(curveto 14.1  0.5 14.35 0.5 14.5 0)
-						(curveto 14.75 -0.5 15 -0.5 15.25 0)
-						(curveto 15.5 0.5 15.75 0.5 16. 0)
-						(curveto 16.75 -0.5 17.5 -0.5 18.5 0))
+					   (curveto 1 0.5 2 0.5 3 0)
+					   (curveto 5 -0.5 7 -0.5 8 0)
+					   (curveto 8.5 0.5 9 0.5 9.5 0)
+					   (curveto 10 -0.5 10.8 -0.5 11.2 0)
+					   (curveto 11.5 0.5 12 0.5 12.5 0)
+					   (curveto 13 -0.5 13.5 -0.5 13.8 0)
+					   (curveto 14.1 0.5 14.35 0.5 14.5 0)
+					   (curveto 14.75 -0.5 15 -0.5 15.25 0)
+					   (curveto 15.5 0.5 15.75 0.5 16. 0)
+					   (curveto 16.75 -0.5 17.5 -0.5 18.5 0))
 				}
 				^\markup \italic { \time-bracket-range 1 3 #19 }
 
@@ -2077,16 +2078,16 @@ exampleTransitionCresc =
 				{
 					\override #'(filled . #f) \path #gliss-thick
 				 	#'((moveto 0 0)
-						(curveto 0.25 -0.5 0.50 -0.5 0.75 0)
-						(curveto 1.00  0.5 1.25  0.5 1.50 0)
-						(curveto 1.75 -0.5 2.00 -0.5 2.25 0)
-						(curveto 2.50  0.5 2.75  0.5 3.00 0)
-						(curveto 3.2 -0.5 3.60 -0.5 3.90 0)
-						(curveto 4.50  0.5 5.00  0.5 6.50 0)
-						(curveto 7.00 -0.5 7.5   -0.5 8.0 0)
-						(curveto 10 0.5 12.5 0.5 15 0)
-						(curveto 17 -0.5 19 -0.5 21 0)
-						(curveto 23 0.5 25 0.5 27 0))
+					   (curveto 0.25 -0.5 0.50 -0.5 0.75 0)
+					   (curveto 1.00 0.5 1.25 0.5 1.50 0)
+					   (curveto 1.75 -0.5 2.00 -0.5 2.25 0)
+					   (curveto 2.50 0.5 2.75 0.5 3.00 0)
+					   (curveto 3.2 -0.5 3.60 -0.5 3.90 0)
+					   (curveto 4.50 0.5 5.00 0.5 6.50 0)
+					   (curveto 7.00 -0.5 7.5 -0.5 8.0 0)
+					   (curveto 10 0.5 12.5 0.5 15 0)
+					   (curveto 17 -0.5 19 -0.5 21 0)
+					   (curveto 23 0.5 25 0.5 27 0))
 				}
 			s1 \hide r8 \breathMark \hide r32
 		}
@@ -2096,7 +2097,7 @@ exampleTransitionCresc =
 			\offset Y-offset #-1 Hairpin
 
 			s8 s8 \< s1 s8 s8 \! s4 \hide s32
-			s8 s8  \< s1. s8 s8 \!
+			s8 s8 \< s1. s8 s8 \!
 		}
 		>>
 	}
@@ -2113,32 +2114,35 @@ exampleTransitionFlicker =
 
 	\new Staff \with { instrumentName = \exampleHeading }
 	{
-		\extendDuration g'2. \- 
-			^\markup \pressure-diagram #3					^\markup
-			{
-				\override #'(filled . #f) \path #0.2				 #'((moveto 0 0)
-					(lineto 10 0)
-					(curveto 13 -1.5 15 -1.5 18 0)
-					(lineto 22 0))
-			}
-	 	\once \override DurationLine.style = #'zigzag
-		\extendDuration \once \hide NoteHead g'4 \-  s4
-		^\markup \pressure-diagram #2
-		\extendDuration \once \hide NoteHead g'4. \-
-		\hide r8 s8 \breathMark \hide r8.	
-		\extendDuration e'8 \- 
-			^\markup \italic \raise #4  { sim. }
+		\extendDuration g'2. \-
+			^\markup \pressure-diagram #3
 			^\markup
 			{
-				\override #'(filled . #f) \path #0.2				 #'((moveto 0 0)
-					(lineto 3 0)
-					(curveto 6 -1.5 9 -1.5 12 0)
-					(lineto 18 0))
+				\override #'(filled . #f) \path #0.2
+				#'((moveto 0 0)
+				   (lineto 10 0)
+				   (curveto 13 -1.5 15 -1.5 18 0)
+				   (lineto 22 0))
+			}
+	 	\once \override DurationLine.style = #'zigzag
+		\extendDuration \once \hide NoteHead g'4 \- s4
+		^\markup \pressure-diagram #2
+		\extendDuration \once \hide NoteHead g'4. \-
+		\hide r8 s8 \breathMark \hide r8.
+		\extendDuration e'8 \-
+			^\markup \italic \raise #4 { sim. }
+			^\markup
+			{
+				\override #'(filled . #f) \path #0.2
+				#'((moveto 0 0)
+				   (lineto 3 0)
+				   (curveto 6 -1.5 9 -1.5 12 0)
+				   (lineto 18 0))
 			}
 		\once \override DurationLine.style = #'zigzag
 		\extendDuration \once \hide NoteHead e'2 \- s8.
-		\extendDuration \once \hide NoteHead  e'2 \-
-		\hide r8 s8 \breathMark \hide r32	
+		\extendDuration \once \hide NoteHead e'2 \-
+		\hide r8 s8 \breathMark \hide r32
 	}
 }
 
@@ -2220,8 +2224,8 @@ exampleBlockTwoSustains =
 	\new Staff \with { instrumentName = \exampleHeading }
 	{
 		b'1 \- s1 \hide r8 \breathMark \hide r32
-		\once \override TrillSpanner.bound-details.left.text = ##f 
-    	a'1~ \- \startTrillSpan s2. \hide r8 \stopTrillSpan \breathMark \hide r32
+		\once \override TrillSpanner.bound-details.left.text = ##f
+		a'1~ \- \startTrillSpan s2. \hide r8 \stopTrillSpan \breathMark \hide r32
 		e'2. \- s1 \hide r8 \breathMark
 	}
 }
@@ -2244,7 +2248,7 @@ exampleBlockTwoFocus =
 			{
 				\extendDuration f'''1. \-
 				\extendDuration \hide NoteHead f'''4 \-
-					^\markup {  \time-bracket-range 1 6 #28.5 }
+					^\markup { \time-bracket-range 1 6 #28.5 }
 				\extendDuration g'''2 \-
 				\extendDuration c''''8. \-
 				\extendDuration g'''4 \-
@@ -2258,7 +2262,7 @@ exampleBlockTwoFocus =
 				\extendDuration f'''4. \-
 				\extendDuration b'''2 \-
 				\extendDuration f'''8. \- s4
-				\hide r4 
+				\hide r4
 			}
 		}
 
@@ -2271,7 +2275,7 @@ exampleBlockTwoFocus =
 				s1.
 				\dashedDuration	c'''4 \-
 				\hide r1 s1 s1 s1 s8
-			    \once \override DurationLine.bound-details.left.padding = 0.625
+				\once \override DurationLine.bound-details.left.padding = 0.625
 				\once \hide NoteHead c'''4 \-
 				\hide r4
 			}
@@ -2318,7 +2322,7 @@ exampleBlockTwoSwells =
 		{
 			\override TextScript.Y-offset = #2
 			b'1\-
-				^\markup {  \time-bracket-range 1 4 #16 }
+				^\markup { \time-bracket-range 1 4 #16 }
 			s4 \hide r8
 			b'1\- s4 \hide r8
 			b'1\-
@@ -2338,4 +2342,3 @@ exampleBlockTwoSwells =
 		}
 	>>
 }
-

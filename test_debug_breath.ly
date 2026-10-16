@@ -12,6 +12,3 @@
 % PAGE 1
 
 \exampleArrivalClouds
-
-
-

@@ -4,13 +4,13 @@
 
 % test
 
-text-empty = 
+text-empty =
 \markup {}
 
-text-brackets = 
+text-brackets =
 \markup
 {
-	\column 
+	\column
 	{
 		\line \italic { Square brackets indicate a set of ideas that an be ordered freely. }
 		\line \italic { Slashes with arrows indicate when ideas should be introduced over time. }
@@ -18,20 +18,20 @@ text-brackets =
 	}
 }
 
-text-or-alt = 
+text-or-alt =
 \markup
 {
-	\column 
+	\column
 	{
 		\line \italic { OR and ALT symbols indicate similar sounding multiphonics. }
 		\line \italic { This is to aid planning of order for contrast or similarity. }
 	}
 }
 
-text-sections = 
+text-sections =
 \markup
 {
-	\column 
+	\column
 	{
 		\line \italic { Section names are indicated within a box with repeat indications to indicate how many times that section is to be traversed in a performance. }
 		\line \italic { Sections with the downwards arrow within two lines are 'insert sections' which can be used at any point within the part they belong to. }
@@ -39,10 +39,10 @@ text-sections =
 	}
 }
 
-text-plus = 
+text-plus =
 \markup
 {
-	\column 
+	\column
 	{
 		\line \italic { These blocks are additional to the main block for the section }
 		\line \italic { Those marked (+) must be optionally used alongside the preceding block. }
@@ -51,10 +51,10 @@ text-plus =
 	}
 }
 
-text-techniques = 
+text-techniques =
 \markup
 {
-	\column 
+	\column
 	{
 		\line \italic { For multiphonics fingering, air pressure (or indication of a teeth tone) and reed position are all given. }
 		\line \italic { Where specific single notes are also an option these are indicated (with a suitable air pressure alteration, or teeth tone indication). }
@@ -64,10 +64,10 @@ text-techniques =
 	}
 }
 
-text-selection-focus = 
+text-selection-focus =
 \markup
 {
-	\column 
+	\column
 	{
 		\line \italic { Throughout the piece two approaches to multiphonics are referred to: \bold selection and \bold focus. }
 		\blankline
@@ -101,20 +101,20 @@ explain-techniques-d = \markup \justify { Whilst common notations are indicated 
 
 % scores
 
-key-brackets = 
+key-brackets =
 {
 	\override TextScript.self-alignment-X = #0
 
 	{
 		\l-bracket
-	
+
 		s4
 		s4
 		s4
-		\option-markup 
-			\markup \italic 
-			{  
-				\center-column 
+		\option-markup
+			\markup \italic
+			{
+				\center-column
 				{
 					\line { indicates separate }
 					\line { fingerings/ideas }
@@ -124,10 +124,10 @@ key-brackets =
 		s4
 		s4
 		s4
-		\option-arrow-markup 
-			\markup \italic 
-			{  
-				\center-column 
+		\option-arrow-markup
+			\markup \italic
+			{
+				\center-column
 				{
 					\line { indicates that fingerings/ideas to }
 					\line { the right should be added over time }
@@ -147,18 +147,18 @@ key-or-alt =
 		\accidentalStyle dodecaphonic
 
 		\l-bracket
-	
+
 		s4
 		\MulFoEi
 		s4
 		s4
-		\alt-sign-markup 
-			\markup \italic 
-			{  
-				\center-column 
+		\alt-sign-markup
+			\markup \italic
+			{
+				\center-column
 				{
 					\line { indicates that two }
-					\line { fingerings sound similar } 
+					\line { fingerings sound similar }
 				}
 			}
 		s4
@@ -170,10 +170,10 @@ key-or-alt =
 		\MulOnFoFv
 		s4
 		s4
-		\or-sign-markup 
-			\markup \italic 
-			{  
-				\center-column 
+		\or-sign-markup
+			\markup \italic
+			{
+				\center-column
 				{
 					\line { indicates that two fingerings }
 					\line { may be considered interchangeable }
@@ -189,19 +189,19 @@ key-or-alt =
 
 layoutTechniques =
 \layout
-{ 
+{
 	\layoutSetup
-	\context 
-	{ 
-		\Score 
-		\override StaffSymbol.transparent = ##t 
+	\context
+	{
+		\Score
+		\override StaffSymbol.transparent = ##t
 		\override StaffSymbol.line-count = #1
 		\override SpacingSpanner.strict-note-spacing = ##t
-	} 
+	}
 	\context { \Staff \remove "Clef_engraver" }
 }
 
-key-techniques-a = 
+key-techniques-a =
 {
 	\override TextScript.self-alignment-X = #0
 	\override TextScript.extra-width = #'(+inf.0 . -inf.0)
@@ -210,27 +210,27 @@ key-techniques-a =
 		s4. ^\markup \override #'(voffset . 2) \pressure-diagram #0
 		s4. ^\markup \override #'(voffset . 2) \pressure-diagram #1
 		s4. ^\markup \override #'(voffset . 2) \pressure-diagram #2
-		   -\markup \italic { left to right - low to high air pressure }
+		    -\markup \italic { left to right - low to high air pressure }
 		s4. ^\markup \override #'(voffset . 2) \pressure-diagram #3
 		s4. ^\markup \override #'(voffset . 2) \pressure-diagram #4
-	
+
 		s2.
 
 		s4 ^\markup \raise #2 \strong-lip-pressure
-		   -\markup \italic { indicates strong lip pressure } 
+		   -\markup \italic { indicates strong lip pressure }
 
 		s1.
 
 		s4 ^\markup \override #'(voffset . 2) \teeth-indicator
-		    -\markup \italic { \center-column { \line { teeth tone } \line { produced by biting the reed } } }	}
+		   -\markup \italic { \center-column { \line { teeth tone } \line { produced by biting the reed } } }	}
 
 		s1.
 
 		s4 ^\markup \raise #3 \noiseBurst
-		    -\markup \italic { \center-column { \line { noise burst } \line { produced using breath and/or tongue constriction } } }
+		   -\markup \italic { \center-column { \line { noise burst } \line { produced using breath and/or tongue constriction } } }
 }
 
-key-techniques-b = 
+key-techniques-b =
 {
 	\override TextScript.self-alignment-X = #0
 	\override TextScript.extra-width = #'(+inf.0 . -inf.0)
@@ -239,7 +239,7 @@ key-techniques-b =
 		s4. ^\markup \override #'(voffset . 2) \override #'(line-ratio . 0.25) \reed-diagram #0
 		s4. ^\markup \override #'(voffset . 2) \override #'(line-ratio . 0.25) \reed-diagram #0.25
 		s4. ^\markup \override #'(voffset . 2) \override #'(line-ratio . 0.25) \reed-diagram #0.5
-		   -\markup \italic { \center-column { \line { left to right - reed position outwards to inwards } \line { (as indicated for normal reed contact) } } }
+		    -\markup \italic { \center-column { \line { left to right - reed position outwards to inwards } \line { (as indicated for normal reed contact) } } }
 		s4. ^\markup \override #'(voffset . 2) \override #'(line-ratio . 0.25) \reed-diagram #0.75
 		s4. ^\markup \override #'(voffset . 2) \override #'(line-ratio . 0.25) \reed-diagram #1
 
@@ -249,7 +249,7 @@ key-techniques-b =
 		s4. ^\markup \override #'(voffset . 2) \override #'(line-ratio . 0.06) \reed-diagram #0.2
 		s8. ^\markup \override #'(voffset . 2) \override #'(line-ratio . 0.06) \reed-diagram #0.4
 		s8.
-		   -\markup \italic { \center-column { \line { left to right - reed position outwards to inwards } \line { (as indicated for teeth tones) } } }
+		    -\markup \italic { \center-column { \line { left to right - reed position outwards to inwards } \line { (as indicated for teeth tones) } } }
 		s4. ^\markup \override #'(voffset . 2) \override #'(line-ratio . 0.06) \reed-diagram #0.6
 		s4. ^\markup \override #'(voffset . 2) \override #'(line-ratio . 0.06) \reed-diagram #0.8
 		s4. ^\markup \override #'(voffset . 2) \override #'(line-ratio . 0.06) \reed-diagram #1
@@ -303,18 +303,17 @@ key-add-or =
 }
 
 
-% title-size 
+% title-size
 
 #(define-markup-command (key-title layout props markup) (markup?)
 
 	(interpret-markup layout props
-	#{ 
-		\markup 
+	#{
+		\markup
 		{
 			\pad-markup #0.28
-			\override #'(font-size . 4) 
-			\bold #markup 
-		} 
+			\override #'(font-size . 4)
+			\bold #markup
+		}
 	#}
 ))
-

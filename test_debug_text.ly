@@ -6,7 +6,7 @@
 
 % LAYOUT
 
-spacer = \markup { 
+spacer = \markup {
 	\column {
 		\line { \null }
 		\line { \null }
@@ -21,4 +21,3 @@ spacer = \markup {
 \textClusterTwo
 \spacer
 \textDivision
-

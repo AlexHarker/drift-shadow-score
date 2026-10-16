@@ -9,7 +9,7 @@
 \version "2.22.1"
 
 
-\markup 
+\markup
 {
 	\column
 	{
@@ -26,7 +26,7 @@
 			{
 				\layoutSetup
 				\sectionCodaB
-			}	
+			}
 			\score
 			{
 				\layoutNoIndent
@@ -55,7 +55,3 @@
 		}
 	}
 }
-
-
-
-

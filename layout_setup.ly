@@ -15,7 +15,7 @@
 
 	(define rn "i")
 	(define page 0)
-	
+
 	(set! page (chain-assoc-get 'page:page-number props 1))
 	(set! rn
 		(if (<= page front-length)
@@ -32,18 +32,18 @@
 {
 	#(set-paper-size "a3landscape")
 	top-margin = 1\cm
-	bottom-margin = 1\cm	
+	bottom-margin = 1\cm
 	left-margin = 1\cm
-	right-margin = 1\cm	
+	right-margin = 1\cm
 	print-page-number = #f
-	
+
 	oddFooterMarkup =
 	\markup
 	{
 		\override #'(font-size . 3)
 		\fill-line { \bold \page-rn #3 }
 	}
-	evenFooterMarkup = \oddFooterMarkup	
+	evenFooterMarkup = \oddFooterMarkup
 }
 
 #(set-global-staff-size 16)

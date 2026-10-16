@@ -22,13 +22,13 @@
 
 		\vspace #2
 
-		\fill-line {  \line \key-title { Notation of Form } }
+		\fill-line { \line \key-title { Notation of Form } }
 
 		\vspace #2
 
 		\fill-line
 		{
-			\score-component-normal 
+			\score-component-normal
 			\key-insert
 			\layoutSetup
 			\text-empty
@@ -47,8 +47,8 @@
 					\layoutSetup
 					\key-plus
 				}
-	
-				\score-component-normal 
+
+				\score-component-normal
 				\key-add-or
 				\layoutSetup
 				\text-empty
@@ -64,23 +64,23 @@
 		\divider #2
 
 		\vspace #3
-		
-		\fill-line 
+
+		\fill-line
 		{
-			\score-component-normal 
-			\key-brackets 
+			\score-component-normal
+			\key-brackets
 			\layoutSetup
 			\text-empty
 			\text-brackets
-			#0 #0 
+			#0 #0
 		}
 
 		\vspace #2
 
-		\fill-line 
+		\fill-line
 		{
-			\score-component-normal 
-			\key-or-alt 
+			\score-component-normal
+			\key-or-alt
 			\layoutSetup
 			\text-empty
 			\text-or-alt
@@ -136,7 +136,7 @@
 
 		\fill-line
 		{
-			\score-component-normal 
+			\score-component-normal
 			\key-techniques-c
 			\layoutSetup
 			\text-empty
@@ -150,14 +150,14 @@
 		{
 			\line
 			{
-				\column 
-				{	
+				\column
+				{
 					\score { \exampleOriginSelection }
 					\vspace #2
 					\score { \exampleArrivalRapidPitchFocus }				}
 				\hspace #5
-				\column 
-				{	
+				\column
+				{
 					\vspace #1
 					\text-selection-focus
 				}
@@ -167,5 +167,3 @@
 }
 
 % selection vs focus
-
-

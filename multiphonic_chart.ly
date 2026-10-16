@@ -5,24 +5,24 @@
 
 % BASIC SETUP ELEMENTS
 
-\header { 
-	tagline = ""	% removed 
-} 
+\header {
+	tagline = ""	% removed
+}
 
 \version "2.22.1"	% necessary for upgrading to future LilyPond versions.
 
 % LAYOUT
 
-\layout 
+\layout
 {
-	\context 
+	\context
 	{
 		\Score
 		\override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/128)
 		\override BarLine.stencil = ##f
 		\override BarNumber.stencil = ##f
 	}
-	\context 
+	\context
 	{
 		\Staff
 		\remove "Time_signature_engraver"
@@ -65,7 +65,7 @@
 	\MulThSxSx
 	\MulFvTh
 	\MulOnOnOn
-	\MulNnSv 
+	\MulNnSv
 	\MulFoSv
 	\MulThNn
 	\MulFvTw

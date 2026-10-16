@@ -14,8 +14,7 @@
 		\fill-line { \line \pad-markup #0.55 { \italic \override #'(font-size . 8) { by Alex Harker } } }
 		\vspace #2
 		\fill-line { \line \pad-markup #0.55 { \italic \override #'(font-size . 8) { co-created with Niamh Dell } } }
-	} 
+	}
 }
 
-\pageBreak 
-
+\pageBreak

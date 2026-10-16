@@ -11,7 +11,7 @@
 % SPACING
 
 
-spacer = \markup { 
+spacer = \markup {
 	\column {
 		\line { \null }
 		\line { \null }
@@ -19,8 +19,8 @@ spacer = \markup {
 	}
 }
 
-% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
-% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 
 
 % EXAMPLES
@@ -30,16 +30,16 @@ componentGlissesOriginExample =
 	\component "Glisses Origin"
 
 	\l-bracket
-	\parenthesize b'4 
-		-\markup { '\concat { \dynamic ppp - \dynamic p } \italic dark/noisy } 
-	 	\glissando 
-	c''4 \glissando 
+	\parenthesize b'4
+		-\markup { '\concat { \dynamic ppp - \dynamic p } \italic dark/noisy }
+	 	\glissando
+	c''4 \glissando
 	d''4
 	\option
-	beh''4 \glissando 
+	beh''4 \glissando
 	b''4
 	\option
-	fih'''4 \glissando 
+	fih'''4 \glissando
 	g'''4
 	\r-bracket
 }
@@ -49,33 +49,33 @@ componentGlissesOriginDetail =
 	\component "Gl. Origin (v2)"
 
 	\l-bracket
-	\parenthesize b'4 
-		-\markup { '\concat { \dynamic ppp - \dynamic p } \italic dark/noisy } 
-		^\markup { \oboe-fingering #'((cc . (one1h two1h three four)) (lh . ()) (rh . ())) } 
-		^\markup { \pressure-diagram #0 }
-		\glissando 
-	bih'4 
-		^\markup { \oboe-fingering #'((cc . (one1h three four six1h)) (lh . ()) (rh . ())) } 
+	\parenthesize b'4
+		-\markup { '\concat { \dynamic ppp - \dynamic p } \italic dark/noisy }
+		^\markup { \oboe-fingering #'((cc . (one1h two1h three four)) (lh . ()) (rh . ())) }
 		^\markup { \pressure-diagram #0 }
 		\glissando
-	c''4 
-		^\markup { \oboe-fingering #'((cc . (two1h three three six)) (lh . ()) (rh . ())) } 
+	bih'4
+		^\markup { \oboe-fingering #'((cc . (one1h three four six1h)) (lh . ()) (rh . ())) }
+		^\markup { \pressure-diagram #0 }
+		\glissando
+	c''4
+		^\markup { \oboe-fingering #'((cc . (two1h three three six)) (lh . ()) (rh . ())) }
 		^\markup { \pressure-diagram #1 }
- 	c''4 \glissando 
-	d''4 
-		^\markup { \oboe-fingering #'((cc . (one two1h four)) (lh . (IandIII)) (rh . ())) } 
+ 	c''4 \glissando
+	d''4
+		^\markup { \oboe-fingering #'((cc . (one two1h four)) (lh . (IandIII)) (rh . ())) }
 		^\markup { \pressure-diagram #0 }
 
 	\option
-	beh''4 
-		^\markup { \oboe-fingering #'((cc . (one two four)) (lh . (I)) (rh . (c))) } 
+	beh''4
+		^\markup { \oboe-fingering #'((cc . (one two four)) (lh . (I)) (rh . (c))) }
 		^\markup { \pressure-diagram #3 } \glissando b''4
 	\option
-	fih'''4 \glissando 
-	fis'''4 
-		^\markup { \oboe-fingering #'((cc . (one two four five)) (lh . (III)) (rh . (c))) } 
-		^\markup { \pressure-diagram #2 } 
-		\glissando 
+	fih'''4 \glissando
+	fis'''4
+		^\markup { \oboe-fingering #'((cc . (one two four five)) (lh . (III)) (rh . (c))) }
+		^\markup { \pressure-diagram #2 }
+		\glissando
 	g'''4
 	\r-bracket
 }
@@ -85,22 +85,22 @@ componentGlissesCentre =
 	\component "Glisses Centre"
 
 	\l-bracket
-	\parenthesize c''4 
-		-\markup { '\concat { \dynamic ppp - \dynamic p } \italic dark/noisy } 
-	 \glissando cih''4 \glissando 
+	\parenthesize c''4
+		-\markup { '\concat { \dynamic ppp - \dynamic p } \italic dark/noisy }
+	 \glissando cih''4 \glissando
 	dih''4
 	\option
-	beh''4 \glissando 
-	b''4 \glissando 
+	beh''4 \glissando
+	b''4 \glissando
 	\parenthesize c'''4
 	\option
-	e'''4 \glissando 
+	e'''4 \glissando
 	gih'''4
 	\r-bracket
 }
 
-% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
-% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 
 % PAGE 0
 
@@ -146,7 +146,7 @@ componentGlissesCentre =
 
 \markup
 {
-	\score-text 
+	\score-text
 	\componentOriginGlisses
 	\layoutSetup
 	\textOriginGlissesA
@@ -154,7 +154,7 @@ componentGlissesCentre =
 }
 
 
-\pageBreak 
+\pageBreak
 
 % PAGE 1
 
@@ -168,12 +168,12 @@ componentGlissesCentre =
 	\combine
 	\column
 	{
-		\line 
+		\line
 		{
-			\score-component 
-			\componentOriginMain 
+			\score-component
+			\componentOriginMain
 			\layoutSetup
-			\textOriginMainA 
+			\textOriginMainA
 			\textOriginMainB
 			#25 #4 #8
 		}
@@ -184,14 +184,14 @@ componentGlissesCentre =
 		\line
 		{
 			\hspace #5
-			\score-component 
+			\score-component
 			\componentGround
 			\layoutNarrower
 			\textGroundA
 			\textGroundB
 			#25 #3 #8
 
-			\score-component 
+			\score-component
 			\componentPush
 			\layoutNarrower
 			\textPushA
@@ -202,24 +202,24 @@ componentGlissesCentre =
 		\spacer
 		\spacer
 
-		\line 
+		\line
 		{
-			\score-component 
+			\score-component
 			\componentDisplace
 			\layoutSetup
 			\textDisplaceA
 			\textDisplaceB
 			#25 #5 #10
 
-			\score 
-			{ 
+			\score
+			{
 				\layoutNoIndent
-				\componentDisplaceEnd 
+				\componentDisplaceEnd
 			}
 		}
 	}
-	
-	\line 
+
+	\line
 	{
 		\overlay
 		{
@@ -229,65 +229,65 @@ componentGlissesCentre =
 			\form-s-curve #32 #-80 #14 #-58
 			\form-s-curve #60 #-18 #121 #-50
 			\override #'(oneway ¢t)
-			\form-s-curve #121 #-58 #97 #-80 
+			\form-s-curve #121 #-58 #97 #-80
 		}
 	}
-} 
+}
 
-\pageBreak 
+\pageBreak
 
 % PAGE 2
 
-\markup 
+\markup
 {
-	\score-component 
+	\score-component
 	\sectionArrival
 	\layoutNarrower
-	\textArrivalA 
+	\textArrivalA
 	\textArrivalB
 	#25 #5 #15
 
-	\score-text 
-	\componentArrivalExtend 
-	\layoutNoIndent 
+	\score-text
+	\componentArrivalExtend
+	\layoutNoIndent
 	\textArrivalExtendA
 	#5
 }
 
-\markup 
+\markup
 {
-	\score-text 
-	\componentArrivalDisplace 
-	\layoutSetup 
+	\score-text
+	\componentArrivalDisplace
+	\layoutSetup
 	\textArrivalDisplaceA
 	#25
 }
 
 \spacer
 
-\markup 
+\markup
 {
-	\score-component 
+	\score-component
 	\sectionClusterOne
 	\layoutNarrower
-	\textClusterOneA 
+	\textClusterOneA
 	\textClusterOneB
 	#25 #5 #15
 }
 
 \spacer
 
-\markup 
+\markup
 {
-	\score-component 
+	\score-component
 	\sectionClusterTwo
 	\layoutSetup
-	\textClusterTwoA 
+	\textClusterTwoA
 	\textClusterTwoB
 	#25 #5 #18
 }
 
-\pageBreak 
+\pageBreak
 
 % PAGE 3
 
@@ -296,28 +296,28 @@ componentGlissesCentre =
 	\main-part { "Part II" }
 }
 
-\markup 
+\markup
 {
-	\score-component 
-	\sectionDivision 
+	\score-component
+	\sectionDivision
 	\layoutNarrower
-	\textDivisionA 
+	\textDivisionA
 	\textDivisionB
 	#25 #5 #27
 }
 
 \spacer
 
-\markup 
+\markup
 {
 	\line
 	{
-		%\score-component 
-		%\componentCentreMain 
-		%\textCentreA 
+		%\score-component
+		%\componentCentreMain
+		%\textCentreA
 		%\textCentreB
 		%#25 #5 #20
-	
+
 		\score
 		{
 			\layoutNarrower
@@ -333,12 +333,12 @@ componentGlissesCentre =
 		\score
 		{
 			\layoutNarrowerNoIndent
-			\componentCentrePressB 
+			\componentCentrePressB
 		}
 	}
 }
 
-\markup 
+\markup
 {
 	\score
 	{
@@ -356,7 +356,7 @@ componentGlissesCentre =
 		\componentCentreExtendC
 	}
 }
-\markup 
+\markup
 {
 	\score
 	{
@@ -367,80 +367,80 @@ componentGlissesCentre =
 
 % PAGE 4
 
-\pageBreak 
+\pageBreak
 
-\markup 
+\markup
 {
 	\column
 	{
 		\line
 		{
-			\score-text 
-			\sectionLoops 
-			\layoutNarrower 
-			\textLoopsA 
+			\score-text
+			\sectionLoops
+			\layoutNarrower
+			\textLoopsA
 			#25
-			
+
 			\hspace #5 { (+) } \hspace #5
-			
-			\score-text 
-			\componentLoopsExtend 
+
+			\score-text
+			\componentLoopsExtend
 			\layoutNoIndent
-			\textLoopsExtendA 
+			\textLoopsExtendA
 			#5
-		}	
+		}
 
 		\line
 		{
-			\score-text 
-			\componentLoopsDisplace 
-			\layoutNarrow 
-			\textLoopsDisplaceA 
+			\score-text
+			\componentLoopsDisplace
+			\layoutNarrow
+			\textLoopsDisplaceA
 			#25
 
-			\score-text 
-			\componentLoopsGround 
-			\layoutSetup 
-			\textLoopsGroundA 
+			\score-text
+			\componentLoopsGround
+			\layoutSetup
+			\textLoopsGroundA
 			#25
 		}
 	}
-	
-	%\textLoopsA 
+
+	%\textLoopsA
 	%\textLoopsB
 	%#25 #5 #10
 }
 
 \spacer
 
-\markup 
+\markup
 {
-	\score-component 
+	\score-component
 	\sectionBlockOne
 	\layoutSetup
-	\textBlockOneA 
+	\textBlockOneA
 	\textBlockOneB
 	#25 #5 #20
 }
 
 \spacer
 
-\markup 
+\markup
 {
 	\line
 	{
-		\score-text 
-		\sectionBlockTwo 
-		\layoutSetup 
+		\score-text
+		\sectionBlockTwo
+		\layoutSetup
 		\textBlockTwoA
 		#25
 
-		\hspace #5 { (+) } \hspace #5 
+		\hspace #5 { (+) } \hspace #5
 
-		\score-text 
-		\componentBlockTwoExtend 
-		\layoutNoIndent 
+		\score-text
+		\componentBlockTwoExtend
+		\layoutNoIndent
 		\textBlockTwoB
 		#5
-	}	
+	}
 }

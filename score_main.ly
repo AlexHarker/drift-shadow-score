@@ -22,41 +22,41 @@
 {
 	\column
 	{
-		\fill-line 
-		{ 
-			\line \pad-markup #0.55 
-			{ 
-				\bold \override #'(font-size . 8) 
-				 #piece-title 
+		\fill-line
+		{
+			\line \pad-markup #0.55
+			{
+				\bold \override #'(font-size . 8)
+				 #piece-title
 			}
 		 }
-	
+
 		\vspace #0.5
-		
-		\fill-line 
-		{ 
-			\line { \null} 
-			\line \pad-markup #0.2 { \override #'(font-size . 4) { for Oboe and Electronics } } 
-			\line \italic \pad-markup #0.1 { \override #'(font-size . 2) { Alex Harker with Niamh Dell \hspace #3 } } 
+
+		\fill-line
+		{
+			\line { \null}
+			\line \pad-markup #0.2 { \override #'(font-size . 4) { for Oboe and Electronics } }
+			\line \italic \pad-markup #0.1 { \override #'(font-size . 2) { Alex Harker with Niamh Dell \hspace #3 } }
 		}
 
-		\vspace #0.5	
+		\vspace #0.5
 
 		\line { \main-part { "Opening" } }
 		\vspace #0.5
 
-		\fill-line 
-		{ 
-			\center-column	
+		\fill-line
+		{
+			\center-column
 			{
 				\column
 				{
 					\line
 					{
 						\score-component-normal
-						\componentUnfoldingMain 
+						\componentUnfoldingMain
 						\layoutSetup
-						\textUnfoldingMainA 
+						\textUnfoldingMainA
 						\textUnfoldingMainB
 						#27 #28
 					}
@@ -81,10 +81,10 @@
 				\italic \line { elide into \reference-part "Part I" }
 			}
 		}
-	} 
+	}
 }
 
-\pageBreak 
+\pageBreak
 
 % PAGE 2
 
@@ -94,20 +94,20 @@
 	{
 		\column
 		{
-			\line 
-			{ 
-				\main-part { "Part I" } 
+			\line
+			{
+				\main-part { "Part I" }
 				\hspace #8
 				\raise #0.5 \italic \line { (move to \reference-part "Part II" after building sufficient drama or exhausting the materials here) }
 			}
 
 
-			\line 
+			\line
 			{
 				\score-component-normal
-				\componentOriginMain 
+				\componentOriginMain
 				\layoutSetup
-				\textOriginMainA 
+				\textOriginMainA
 				\textOriginMainB
 				#27 #28
 			}
@@ -125,13 +125,13 @@
 
 				\vcenter \line { \hspace-normal \form-component \textOriginForm }
 			}
-	
+
 			\vspace #1.4
 
 			\line
 			{
 				\hspace #5
-				\score-component-tight 
+				\score-component-tight
 				\componentGround
 				\layoutNarrower
 				\textGroundA
@@ -150,7 +150,7 @@
 
 			\vspace #0.6
 
-			\line 
+			\line
 			{
 				\score-component-normal
 				\componentDisplace
@@ -159,15 +159,15 @@
 				\textDisplaceB
 				#29 #28
 
-				\vcenter \parenthesis-markup #2 ##f 
+				\vcenter \parenthesis-markup #2 ##f
 				\override #'(oneway . #t)
 				\form-link #0 #0 #5 #0
 				\vcenter \parenthesis-markup #2 ##t
 
-				\score-text 
-				\componentDisplaceEnd 
+				\score-text
+				\componentDisplaceEnd
 				\layoutDisplaceEnd
-				\textDisplaceEnd 
+				\textDisplaceEnd
 				#5.2
 
 				\override #'(oneway . #t)
@@ -175,8 +175,8 @@
 				\vcenter \section-idea { Arrival }
 			}
 		}
-	
-		\line 
+
+		\line
 		{
 			\overlay
 			{
@@ -193,26 +193,26 @@
 			}
 		}
 	}
-} 
+}
 
-\pageBreak 
+\pageBreak
 
 % PAGE 3
 
-\markup 
+\markup
 {
-	\column	
+	\column
 	{
-		\line 
+		\line
 		{
 			\overlay
 			{
 
-				\lower #23.4 
+				\lower #23.4
 				\score-component-normal
 				\sectionArrival
 				\layoutNarrower
-				\textArrivalA 
+				\textArrivalA
 				\textArrivalB
 				#29 #34
 
@@ -232,8 +232,8 @@
 		{
 			\hspace-optional
 
-			\score-component-normal 
-			\componentArrivalExtend 
+			\score-component-normal
+			\componentArrivalExtend
 			\layoutNoIndent
 			\textArrivalExtendA
 			\textArrivalExtendB
@@ -242,8 +242,8 @@
 			\hspace-tight
 
 			\score-component-normal
-			\componentArrivalDisplace 
-			\layoutNoIndent 
+			\componentArrivalDisplace
+			\layoutNoIndent
 			\textArrivalDisplaceA
 			\textArrivalDisplaceB
 			#11.5 #0
@@ -254,7 +254,7 @@
 		\score-component-normal
 		\sectionClusterOne
 		\layoutClusterOne
-		\textClusterOneA 
+		\textClusterOneA
 		\textClusterOneB
 		#28 #28
 
@@ -263,13 +263,13 @@
 		\score-component-normal
 		\sectionClusterTwo
 		\layoutSetup
-		\textClusterTwoA 
+		\textClusterTwoA
 		\textClusterTwoB
 		#30 #23.4
-	} 
+	}
 }
 
-\pageBreak 
+\pageBreak
 
 
 % PAGE 4
@@ -282,12 +282,12 @@
 		{
 			\line \main-part { "Part II" }
 
-			\lower #23.4 \line 
+			\lower #23.4 \line
 			{
-				\score-component-normal 
-				\sectionDivision 
+				\score-component-normal
+				\sectionDivision
 				\layoutNarrower
-				\textDivisionA 
+				\textDivisionA
 				\textDivisionB
 				#31.5 #27
 
@@ -299,22 +299,22 @@
 			}
 
 			\divider #(if multi_display 3 4)
-	
+
 			\line
 			{
-				\score-text 
-				\sectionLoops 
-				\layoutNarrower 
-				\textLoopsA 
+				\score-text
+				\sectionLoops
+				\layoutNarrower
+				\textLoopsA
 				#32
-						
-				\score-text 
-				\componentLoopsExtend 
+
+				\score-text
+				\componentLoopsExtend
 				\layoutNoIndent
-				\textLoopsExtendA 
+				\textLoopsExtendA
 				#9.5
 			}
-	
+
 			\vspace #2
 
 			\line
@@ -322,22 +322,22 @@
 				\hspace-optional
 
 				\score-component-normal
-				\componentLoopsDisplace 
+				\componentLoopsDisplace
 				\layoutNarrowNoIndent
-				\textLoopsDisplaceA 
+				\textLoopsDisplaceA
 				\textLoopsDisplaceB
 				#9.7 #0
-			
-				\hspace-normal 
+
+				\hspace-normal
 
 				\score-component-normal
-				\componentLoopsGround 
-				\layoutNoIndent 
-				\textLoopsGroundA 
-				\textLoopsGroundB 
+				\componentLoopsGround
+				\layoutNoIndent
+				\textLoopsGroundA
+				\textLoopsGroundB
 				#12 #25
-			}		
-			
+			}
+
 			\vspace #1.5
 
 			\overlay
@@ -352,8 +352,8 @@
 				}
 			}
 		}
-		
-		\line 
+
+		\line
 		{
 			\overlay
 			{
@@ -368,12 +368,12 @@
 
 % PAGE 5
 
-\pageBreak 
+\pageBreak
 
-\markup 
+\markup
 {
 	\overlay
-	{	
+	{
 		\column
 		{
 			\line
@@ -381,22 +381,22 @@
 				\overlay
 				{
 					\lower #23.4
-					\score-component-normal 
-					\componentCentreMain 
+					\score-component-normal
+					\componentCentreMain
 					\layoutNarrow
-					\textCentreMainA 
+					\textCentreMainA
 					\textCentreMainB
 					#25 #0
 
 					\override #'(offset . 7.8)
-					\arrive-from 
-					{ 
-						\previous-idea Loops 
+					\arrive-from
+					{
+						\previous-idea Loops
 						\vspace #(/ 1 3)
-						\previous-idea Division 
+						\previous-idea Division
 					}
 				}
-				
+
 				\hspace #12.2
 				\lower #23.4 \line
 				{
@@ -411,7 +411,7 @@
 
 			\line
 			{
-				\score-component-normal 
+				\score-component-normal
 				\componentCentreGlisses
 				\layoutSetup
 				\textCentreGlissesA
@@ -426,14 +426,14 @@
 			\line
 			{
 				\hspace #5
-				\score-text 
+				\score-text
 				\componentCentrePressA
 				\layoutSetup
 				\textPressA
 				#27
-		
-				\score-component-normal 
-				\componentCentrePressB 
+
+				\score-component-normal
+				\componentCentrePressB
 				\layoutNoIndent
 				\textPressB
 				\textPressC
@@ -442,15 +442,15 @@
 
 			\vspace #page_five_space
 
-			\line 
+			\line
 			{
-				\score-text 
+				\score-text
 				\componentCentreExtendA
 				\layoutNarrow
 				\textExtendA
 				#27
-		
-				\score-component-normal 
+
+				\score-component-normal
 				\componentCentreExtendB
 				\layoutNarrowerNoIndent
 				\textExtendB
@@ -468,9 +468,9 @@
 				\hspace-form-link
 				\vcenter \section-idea { Transition }
 			}
-		}	
+		}
 
-		\line 
+		\line
 		{
 			\overlay
 			{
@@ -479,22 +479,22 @@
 				\override #'(anglea . -4)
 				\override #'(angleb . 4)
 				\override #'(ldist . 10)
-				\override #'(pdist . 5)			
+				\override #'(pdist . 5)
 				\form-curve #23 #(if multi_display -59 -56) #14 #-95
 			}
 		}
 	}
-}	
+}
 
 % PAGE 6
 
-\pageBreak 
+\pageBreak
 
-\markup 
+\markup
 {
 	\column
 	{
-		\vspace #4 
+		\vspace #4
 
 		\line
 		{
@@ -503,15 +503,15 @@
 				\lower #23.4
 				\line
 				{
-					\score-text 
-					\componentTransitionA 
-					\layoutSetup 
+					\score-text
+					\componentTransitionA
+					\layoutSetup
 					\textTransitionA
 					#30.2
 
 					\score-component-normal
-					\componentTransitionB 
-					\layoutNoIndent 
+					\componentTransitionB
+					\layoutNoIndent
 					\textTransitionB
 					\textTransitionC
 					#10.5 #25
@@ -527,7 +527,7 @@
 			}
 		}
 
-		\vspace #4 
+		\vspace #4
 
 		\divider #4
 
@@ -536,7 +536,7 @@
 			\score-component-normal
 			\sectionBlockOne
 			\layoutSetup
-			\textBlockOneA 
+			\textBlockOneA
 			\textBlockOneB
 			#27.7 #25
 		}
@@ -545,15 +545,15 @@
 
 		\line
 		{
-			\score-text 
-			\sectionBlockTwo 
-			\layoutSetup 
+			\score-text
+			\sectionBlockTwo
+			\layoutSetup
 			\textBlockTwoA
 			#31.9
 
 			\score-component-normal
-			\componentBlockTwoExtend 
-			\layoutNoIndent 
+			\componentBlockTwoExtend
+			\layoutNoIndent
 			\textBlockTwoB
 			\textBlockTwoC
 			#11.8 #30
@@ -564,9 +564,9 @@
 }
 
 
-\pageBreak 
+\pageBreak
 
-\markup 
+\markup
 {
 	\column
 	{
@@ -575,8 +575,8 @@
 		\line
 		{
 			\score-component-normal
-			\sectionCodaA 
-			\layoutSetup 
+			\sectionCodaA
+			\layoutSetup
 			\textCodaAA
 			\textSuspend
 			#27.1 #0
@@ -585,28 +585,28 @@
 
 			%\hspace #60
 
-			%\score-text 
-			%\sectionCodaRecording 
-			%\layoutSetup 
+			%\score-text
+			%\sectionCodaRecording
+			%\layoutSetup
 			%\textCodaRecA
-			%#31.5	
+			%#31.5
 		}
 
 		\vspace #3
 
 		\line
 		{
-			\score-text 
-			\sectionCodaB 
-			\layoutSetup 
+			\score-text
+			\sectionCodaB
+			\layoutSetup
 			\textCodaBA
 			#27
 
-			\hspace #4 
+			\hspace #4
 
-			\score-text 
-			\sectionCodaC 
-			\layoutNoIndent 
+			\score-text
+			\sectionCodaC
+			\layoutNoIndent
 			\textCodaCA
 			#11.2
 		}
@@ -615,17 +615,17 @@
 
 		\line
 		{
-			\score-text 
-			\sectionCodaD 
-			\layoutSetup 
+			\score-text
+			\sectionCodaD
+			\layoutSetup
 			\textCodaDA
 			#28.8
 
-			\hspace #4 
+			\hspace #4
 
-			\score-text 
+			\score-text
 			\sectionCodaE
-			\layoutEnd 
+			\layoutEnd
 			\textCodaEA
 			#8.7
 		}
@@ -635,6 +635,3 @@
 		\fill-line { \line { \form-component \textCoda } }
 	}
 }
-
-
-

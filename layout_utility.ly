@@ -11,10 +11,10 @@ layoutSetup =
 	{
 		\Score
 		\override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/64)
-		
+
 		proportionalNotationDuration = #(ly:make-moment 1/4)
  		\override SpacingSpanner.uniform-stretching = ##t
- 		
+
 		\override BarLine.stencil = ##f
 		\override BarNumber.stencil = ##f
 		\override Glissando.thickness = #3
@@ -73,7 +73,7 @@ layoutNarrowNoIndent =
 layoutEnd =
 \layout
 {
-	\layoutNoIndent	
+	\layoutNoIndent
 	\override Score.BarLine.stencil = #ly:bar-line::print
 }
 
@@ -300,14 +300,14 @@ layoutDivisionNarrow =
 
 #(define-markup-command (score-component layout props score layoutTweak textA textB hSpaceA hSpaceB vSpaceB) (ly:music? ly:output-def? markup? markup? number? number? number?)
 
-(define text-placed (if (not (eq? vSpaceB 0)) #{ \markup \raise #vSpaceB  #textB #} #{ \markup \vcenter #textB #}))
+(define text-placed (if (not (eq? vSpaceB 0)) #{ \markup \raise #vSpaceB #textB #} #{ \markup \vcenter #textB #}))
 
 	(interpret-markup layout props
 	#{
 		\markup
 		{
 			\score-text #score #layoutTweak #textA #hSpaceA
-		
+
 			\hspace #hSpaceB
 			#text-placed
 		}
