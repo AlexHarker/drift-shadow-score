@@ -5,7 +5,6 @@
 
 ekmelicFont = "Ekmelos"
 \include "ekmel-48ah.ily"
-\ekmelicStyle sag
 \ekmelicUserStyle eimm #'(
     (1/8 #xE272)
     (-1/8 #xE273)
