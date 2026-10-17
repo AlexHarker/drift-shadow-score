@@ -848,7 +848,7 @@ optional-component =
     #{
         \new Staff \with { instrumentName = \markup {
             \pad-around #1 \center-column {
-            \line { \pad-markup #0.5 \bold \optional-add }
+            \line { \pad-markup #0.5 \optional-add }
         }}}
 
         \accidentalStyle dodecaphonic
@@ -860,7 +860,7 @@ add-or-component =
     #{
         \new Staff \with { instrumentName = \markup {
             \pad-around #1 \center-column {
-            \line { \pad-markup #0.5 \bold \optional-add-or }
+            \line { \pad-markup #0.5 \optional-add-or }
         }}}
 
         \accidentalStyle dodecaphonic
