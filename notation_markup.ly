@@ -112,7 +112,7 @@ breathMark = ^\markup
     {
         \vcenter \parenthesis-markup #-1 ##f
         \hspace #0.1
-        \vcenter \musicglyph "scripts.rcomma"
+        \vcenter \musicglyph "scripts.raltcomma"
         \hspace #0.1
         \vcenter \parenthesis-markup #-1 ##t
     }
