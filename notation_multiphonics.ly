@@ -8,7 +8,7 @@ ekmelicFont = "Ekmelos"
 \ekmelicUserStyle eimm #'(
     (1/8 #xE272)
     (-1/8 #xE273)
-     (1/4 #xE282)
+    (1/4 #xE282)
     (-1/4 #xE284)
     (3/8 #xE299)
     (-3/8 #xE291)
