@@ -305,7 +305,6 @@ dashedDurationArticulate =
     \once \override DurationLine.bound-details.left.padding = -0.6
 }
 
-
 dashedDurationStart =
 {
     \dashedDurationBreak
@@ -643,7 +642,6 @@ exampleUnfoldingFormB =
     }
 }
 
-
 % ORIGIN
 
 exampleOriginSwells =
@@ -886,7 +884,6 @@ exampleGroundDissolve =
 }
 
 % PUSH
-
 
 examplePushRearticulate =
 \score
@@ -1333,7 +1330,6 @@ exampleArrivalExtendB =
 \score
 {
     \layoutArrivalNarrow
-
 
     \new Staff \with { instrumentName = \exampleHeading }
     <<
@@ -1988,7 +1984,6 @@ exampleExtendWavering =
 {
     \layoutArrivalNarrow
 
-
     \new Staff \with { instrumentName = \exampleHeading }
     <<
 
@@ -2237,7 +2232,6 @@ exampleBlockTwoFocus =
 \score
 {
     \layoutArrivalNarrow
-
 
     \new Staff \with { instrumentName = \exampleHeading }
     <<
