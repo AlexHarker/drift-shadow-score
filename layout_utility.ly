@@ -1,7 +1,7 @@
 
 \include "notation_markup.ly"
 
-% LAYOUT DEFITIONS
+% LAYOUT DEFINITIONS
 
 layoutSetup =
 \layout
