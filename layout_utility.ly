@@ -1,6 +1,15 @@
 
 \include "notation_markup.ly"
 
+\layout {
+    \context
+    {
+        \Voice
+        \override TrillSpanner.padding = #1.0
+        \override TrillSpanner.bound-details.right.padding = #-.8
+    }
+}
+
 % LAYOUT DEFINITIONS
 
 layoutSetup =
