@@ -85,7 +85,7 @@ layoutDisplaceEnd =
     {
         \Score
         proportionalNotationDuration = #1/4
-         \override SpacingSpanner.uniform-stretching = ##t
+        \override SpacingSpanner.uniform-stretching = ##t
     }
     \context
     {
@@ -122,7 +122,7 @@ proportionalStrict =
 
         proportionalNotationDuration = #1/8
         \override SpacingSpanner.shortest-duration-space = #1.4
-         \override SpacingSpanner.uniform-stretching = ##t
+        \override SpacingSpanner.uniform-stretching = ##t
         \override SpacingSpanner.strict-note-spacing = ##t
 
         \override Glissando.thickness = #1.5
