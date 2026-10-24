@@ -267,20 +267,15 @@ layoutDivisionNarrow =
 % Utilities for overlaying multiple markups
 
 #(define (combine-markups markups)
-
     (if (= (length markups) 1)
     #{ \markup #markups #}
-    #{ \markup \combine #(car markups) #(combine-markups (list-tail markups 1)) #} )
-)
+    #{ \markup \combine #(car markups) #(combine-markups (list-tail markups 1)) #} ))
 
 #(define-markup-command (overlay layout props markups) (markup-list?)
-
     (interpret-markup layout props
     (markup (combine-markups markups))))
 
-
 #(define-markup-command (score-text layout props score layoutTweak text inset) (ly:music? ly:output-def? markup? number?)
-
     (interpret-markup layout props
     #{
         \markup
@@ -301,7 +296,6 @@ layoutDivisionNarrow =
 #(define-markup-command (score-component layout props score layoutTweak textA textB hSpaceA hSpaceB vSpaceB) (ly:music? ly:output-def? markup? markup? number? number? number?)
 
 (define text-placed (if (not (eq? vSpaceB 0)) #{ \markup \raise #vSpaceB #textB #} #{ \markup \vcenter #textB #}))
-
     (interpret-markup layout props
     #{
         \markup
@@ -314,21 +308,18 @@ layoutDivisionNarrow =
     #}))
 
 #(define-markup-command (hspace-normal layout props) ()
-
     (interpret-markup layout props
     #{
         \markup { \hspace #4 }
     #}))
 
 #(define-markup-command (hspace-tight layout props) ()
-
     (interpret-markup layout props
     #{
         \markup { \hspace #3 }
     #}))
 
 #(define-markup-command (hspace-form-link layout props) ()
-
     (interpret-markup layout props
     #{
         \markup { \hspace #2 }
@@ -337,21 +328,18 @@ layoutDivisionNarrow =
 hspace-optional = \markup \hspace #18.5
 
 #(define-markup-command (score-component-normal layout props score layoutTweak textA textB hSpaceA vSpaceB) (ly:music? ly:output-def? markup? markup? number? number?)
-
     (interpret-markup layout props
     #{
         \markup \score-component #score #layoutTweak #textA #textB #hSpaceA #4 #vSpaceB
     #}))
 
 #(define-markup-command (score-component-tight layout props score layoutTweak textA textB hSpaceA vSpaceB) (ly:music? ly:output-def? markup? markup? number? number?)
-
     (interpret-markup layout props
     #{
         \markup \score-component #score #layoutTweak #textA #textB #hSpaceA #3 #vSpaceB
     #}))
 
 #(define-markup-command (form-component layout props markup) (markup?)
-
     (interpret-markup layout props
     #{
         \markup
@@ -363,7 +351,6 @@ hspace-optional = \markup \hspace #18.5
     #}))
 
 #(define-markup-command (divider layout props height) (number?)
-
     (interpret-markup layout props
     #{
         \markup
